@@ -1,0 +1,26 @@
+[
+  {
+    "name": "English navigation and table messages",
+    "status": "PASS"
+  },
+  {
+    "name": "English chart scenario and dynamic message",
+    "status": "PASS"
+  },
+  {
+    "name": "English inspector navigation",
+    "status": "PASS"
+  },
+  {
+    "name": "Switch to Russian preserves chart navigation and dark theme",
+    "status": "PASS"
+  },
+  {
+    "name": "Russian table messages and English recovery",
+    "status": "PASS"
+  },
+  {
+    "name": "English chart and system theme restored",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data name="MainPage_Navigation_SelectionChanged_001" xml:space="preserve">
+    <value>Component activation failed: {0}</value>
+    <comment>MainPage: Navigation_SelectionChanged</comment>
+  </data>
+  <data name="ApiInspectorPage_Rebuild_001" xml:space="preserve">
+    <value>read-only</value>
+    <comment>ApiInspectorPage: Rebuild</comment>
+  </data>
+  <data name="ApiInspectorPage_PropertyChanged_002" xml:space="preserve">
+    <value>No property selected</value>
+    <comment>ApiInspectorPage: PropertyChanged</comment>
+  </data>
+  <data name="ApiInspectorPage_PropertyChanged_003" xml:space="preserve">
+    <value>Change the search query.</value>
+    <comment>ApiInspectorPage: PropertyChanged</comment>
+  </data>
+  <data name="ApiInspectorPage_PropertyChanged_004" xml:space="preserve">
+    <value>{0}
+Type: {1}
+Current: {2}</value>
+    <comment>ApiInspectorPage: PropertyChanged</comment>
+  </data>
+  <data name="ApiInspectorPage_Apply_Click_005" xml:space="preserve">
+    <value>{0} = {1}. Return to the lab to see the result.</value>
+    <comment>ApiInspectorPage: Apply_Click</comment>
+  </data>
+  <data name="ApiInspectorPage_Restore_Click_006" xml:space="preserve">
+    <value>{0}: original value restored.</value>
+    <comment>ApiInspectorPage: Restore_Click</comment>
+  </data>
+  <data name="ApiInspectorPage_ConvertValue_007" xml:space="preserve">
+    <value>Enter one number or four comma-separated numbers.</value>
+    <comment>ApiInspectorPage: ConvertValue</comment>
+  </data>
+  <data name="ApiInspectorPage_ConvertValue_008" xml:space="preserve">
+    <value>Specify a color as #RRGGBB or #AARRGGBB.</value>
+    <comment>ApiInspectorPage: ConvertValue</comment>
+  </data>
+  <data name="ApiInspectorPage_ConvertValue_009" xml:space="preserve">
+    <value>Expected #RRGGBB or #AARRGGBB.</value>
+    <comment>ApiInspectorPage: ConvertValue</comment>
+  </data>
+  <data name="ApiInspectorPage_ReadValue_010" xml:space="preserve">
+    <value>Read failed: {0}</value>
+    <comment>ApiInspectorPage: ReadValue</comment>
+  </data>
+  <data name="ApiInspectorPage_Catalog_Click_011" xml:space="preserve">
+    <value>SDK catalog: {0} public types</value>
+    <comment>ApiInspectorPage: Catalog_Click</comment>
+  </data>
+  <data name="ApiInspectorPage_Catalog_Click_012" xml:space="preserve">
+    <value>Copy</value>
+    <comment>ApiInspectorPage: Catalog_Click</comment>
+  </data>
+  <data name="ApiInspectorPage_Catalog_Click_013" xml:space="preserve">
+    <value>Close</value>
+    <comment>ApiInspectorPage: Catalog_Click</comment>
+  </data>
+  <data name="ApiInspectorPage_Catalog_Click_014" xml:space="preserve">
+    <value>Copied {0} types with public properties, methods, and events.</value>
+    <comment>ApiInspectorPage: Catalog_Click</comment>
+  </data>
+  <data name="ChartsLabPage__presets_001" xml:space="preserve">
+    <value>Lines • categories</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_002" xml:space="preserve">
+    <value>Area • categories</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_003" xml:space="preserve">
+    <value>Bars • categories</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_004" xml:space="preserve">
+    <value>Mixed series</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_005" xml:space="preserve">
+    <value>Numeric X categories</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_006" xml:space="preserve">
+    <value>Dates • daily</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_007" xml:space="preserve">
+    <value>Two Y axes</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_008" xml:space="preserve">
+    <value>Horizontal bars</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_009" xml:space="preserve">
+    <value>Empty source</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage__presets_010" xml:space="preserve">
+    <value>200 points</value>
+    <comment>ChartsLabPage: _presets</comment>
+  </data>
+  <data name="ChartsLabPage_NumericXAxisNote_011" xml:space="preserve">
+    <value>The SDK rejects LinearAxis on X; numbers are displayed as evenly spaced categories, without a continuous scale.</value>
+    <comment>ChartsLabPage: NumericXAxisNote</comment>
+  </data>
+  <data name="ChartsLabPage_Text_012" xml:space="preserve">
+    <value>Stream stopped: </value>
+    <comment>ChartsLabPage: Text</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_013" xml:space="preserve">
+    <value>Incomplete configuration for scenario {0}</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_014" xml:space="preserve">
+    <value>Passed {0} scenarios: series, axes, markers, dash styles, overrides, and Samples updates. LinearAxis on X restriction checked: {1}.</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_015" xml:space="preserve">
+    <value>assignment accepted</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_016" xml:space="preserve">
+    <value>the SDK rejected the continuous scale</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_017" xml:space="preserve">
+    <value>restore</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_018" xml:space="preserve">
+    <value>Scenario {0} ({1}) failed after {2} checks; {3}: {4}</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_RunSmokeTests_019" xml:space="preserve">
+    <value>; restore: {0}</value>
+    <comment>ChartsLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPreset_020" xml:space="preserve">
+    <value>Value</value>
+    <comment>ChartsLabPage: ApplyPreset</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPreset_021" xml:space="preserve">
+    <value>Secondary Y</value>
+    <comment>ChartsLabPage: ApplyPreset</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPreset_022" xml:space="preserve">
+    <value>Series</value>
+    <comment>ChartsLabPage: ApplyPreset</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPreset_023" xml:space="preserve">
+    <value>{0} · {1} series · {2} points. Settings apply immediately.</value>
+    <comment>ChartsLabPage: ApplyPreset</comment>
+  </data>
+  <data name="ChartsLabPage_MakeXAxis_024" xml:space="preserve">
+    <value>Numeric X categories</value>
+    <comment>ChartsLabPage: MakeXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_MakeXAxis_025" xml:space="preserve">
+    <value>Date</value>
+    <comment>ChartsLabPage: MakeXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_MakeXAxis_026" xml:space="preserve">
+    <value>Category</value>
+    <comment>ChartsLabPage: MakeXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_AddSeries_027" xml:space="preserve">
+    <value>Series {0}</value>
+    <comment>ChartsLabPage: AddSeries</comment>
+  </data>
+  <data name="ChartsLabPage_AddPoint_028" xml:space="preserve">
+    <value>Point {0}</value>
+    <comment>ChartsLabPage: AddPoint</comment>
+  </data>
+  <data name="ChartsLabPage_AddPoint_029" xml:space="preserve">
+    <value>Added point {0}; Samples.ItemsSource received a new typed array.</value>
+    <comment>ChartsLabPage: AddPoint</comment>
+  </data>
+  <data name="ChartsLabPage_RemovePoint_030" xml:space="preserve">
+    <value>{0} points remaining.</value>
+    <comment>ChartsLabPage: RemovePoint</comment>
+  </data>
+  <data name="ChartsLabPage_MutateData_031" xml:space="preserve">
+    <value>Stream: {0}-point window, 800 ms interval, update {1}.</value>
+    <comment>ChartsLabPage: MutateData</comment>
+  </data>
+  <data name="ChartsLabPage_MutateData_032" xml:space="preserve">
+    <value>Values changed; typed Samples sources refreshed.</value>
+    <comment>ChartsLabPage: MutateData</comment>
+  </data>
+  <data name="ChartsLabPage_BrushAt_033" xml:space="preserve">
+    <value>Choose a palette color to replace the brush.</value>
+    <comment>ChartsLabPage: BrushAt</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_034" xml:space="preserve">
+    <value>Chart and series</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_035" xml:space="preserve">
+    <value>Show legend</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_036" xml:space="preserve">
+    <value>Legend title</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_037" xml:space="preserve">
+    <value>Selected series</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_038" xml:space="preserve">
+    <value>Series type</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_039" xml:space="preserve">
+    <value>Line</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_040" xml:space="preserve">
+    <value>Area</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_041" xml:space="preserve">
+    <value>Bar</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_042" xml:space="preserve">
+    <value>Series title</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_043" xml:space="preserve">
+    <value>Series visible</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_044" xml:space="preserve">
+    <value>Stroke thickness</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_045" xml:space="preserve">
+    <value>Stroke color</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_046" xml:space="preserve">
+    <value>Stroke dash style</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_047" xml:space="preserve">
+    <value>Fill color</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_048" xml:space="preserve">
+    <value>Fill opacity (0–1)</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_049" xml:space="preserve">
+    <value>Bar orientation</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_050" xml:space="preserve">
+    <value>Data labels</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_051" xml:space="preserve">
+    <value>Data label color</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_052" xml:space="preserve">
+    <value>Data markers</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_053" xml:space="preserve">
+    <value>Marker shape</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_054" xml:space="preserve">
+    <value>Marker color</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_055" xml:space="preserve">
+    <value>Secondary Y axis</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_056" xml:space="preserve">
+    <value>X axis</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_057" xml:space="preserve">
+    <value>X axis type</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_058" xml:space="preserve">
+    <value>Categories</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_059" xml:space="preserve">
+    <value>Numbers (categories)</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_060" xml:space="preserve">
+    <value>Dates</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_061" xml:space="preserve">
+    <value>Probe LinearAxis on X</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_062" xml:space="preserve">
+    <value>The SDK accepted LinearAxis on X: </value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_063" xml:space="preserve">
+    <value>Sort categories by</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_064" xml:space="preserve">
+    <value>Category sort order</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_065" xml:space="preserve">
+    <value>Date interval</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_066" xml:space="preserve">
+    <value>Date label format</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_067" xml:space="preserve">
+    <value>Start date (empty = automatic)</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_068" xml:space="preserve">
+    <value>The start date must precede the end date.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_069" xml:space="preserve">
+    <value>End date (empty = automatic)</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_070" xml:space="preserve">
+    <value>The end date must follow the start date.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_071" xml:space="preserve">
+    <value>Primary Y axis</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_072" xml:space="preserve">
+    <value>Secondary Y axis</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_073" xml:space="preserve">
+    <value>Points and live data</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_074" xml:space="preserve">
+    <value>Point index (zero-based)</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_075" xml:space="preserve">
+    <value>X: category, number, or ISO date</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_076" xml:space="preserve">
+    <value>Y of selected series</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_077" xml:space="preserve">
+    <value>Update point</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_078" xml:space="preserve">
+    <value>The app edits its own collection and assigns a refreshed array to Samples. Series share X and have separate Y values and Samples.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_079" xml:space="preserve">
+    <value>Per-point labels and markers</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_080" xml:space="preserve">
+    <value>Uses the index from the points section. Overrides are stored in IObservableMap&lt;uint, ...&gt;.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_081" xml:space="preserve">
+    <value>Override label</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_082" xml:space="preserve">
+    <value>Label text</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_083" xml:space="preserve">
+    <value>Selected point</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_084" xml:space="preserve">
+    <value>Point label color</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_085" xml:space="preserve">
+    <value>Override marker</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_086" xml:space="preserve">
+    <value>Point marker shape</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_087" xml:space="preserve">
+    <value>Point marker color</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_088" xml:space="preserve">
+    <value>Apply to selected point</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_089" xml:space="preserve">
+    <value>Clear series overrides</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_090" xml:space="preserve">
+    <value>Selected series overrides cleared.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_091" xml:space="preserve">
+    <value>Public API and preview limitations</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_092" xml:space="preserve">
+    <value>Chart: Axes, Data, Series, ShowLegend, LegendTitle. CartesianSeries: X/Y Values and Axis, Stroke, visibility, labels, and markers. Category / Linear / DateTime axes. Area and Bar: Fill; Bar: Orientation. See docs/chart-research.md and the API inspector for the complete inventory and sources.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_RefreshSettings_093" xml:space="preserve">
+    <value>This version declares Line, Area, and Bar. The public API has no Pie, Scatter, stacking, built-in zoom/pan, tooltip configuration, or point-click events. This app implements streaming and point editing through data sources.</value>
+    <comment>ChartsLabPage: RefreshSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_094" xml:space="preserve">
+    <value>Axis label</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_095" xml:space="preserve">
+    <value>Axis visible</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_096" xml:space="preserve">
+    <value>Tick labels</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_097" xml:space="preserve">
+    <value>Tick marks</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_098" xml:space="preserve">
+    <value>Grid lines</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_099" xml:space="preserve">
+    <value>None</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_100" xml:space="preserve">
+    <value>Major</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_101" xml:space="preserve">
+    <value>Minor</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_102" xml:space="preserve">
+    <value>Axis line color</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_103" xml:space="preserve">
+    <value>Major grid line color</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_104" xml:space="preserve">
+    <value>Minor grid line color</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_105" xml:space="preserve">
+    <value>Tick color</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_AxisSettings_106" xml:space="preserve">
+    <value>Tick label color</value>
+    <comment>ChartsLabPage: AxisSettings</comment>
+  </data>
+  <data name="ChartsLabPage_LinearSettings_107" xml:space="preserve">
+    <value>An empty numeric field sets null: automatic range or spacing.</value>
+    <comment>ChartsLabPage: LinearSettings</comment>
+  </data>
+  <data name="ChartsLabPage_LinearSettings_108" xml:space="preserve">
+    <value>Minimum</value>
+    <comment>ChartsLabPage: LinearSettings</comment>
+  </data>
+  <data name="ChartsLabPage_LinearSettings_109" xml:space="preserve">
+    <value>Minimum must be less than maximum.</value>
+    <comment>ChartsLabPage: LinearSettings</comment>
+  </data>
+  <data name="ChartsLabPage_LinearSettings_110" xml:space="preserve">
+    <value>Maximum</value>
+    <comment>ChartsLabPage: LinearSettings</comment>
+  </data>
+  <data name="ChartsLabPage_LinearSettings_111" xml:space="preserve">
+    <value>Maximum must be greater than minimum.</value>
+    <comment>ChartsLabPage: LinearSettings</comment>
+  </data>
+  <data name="ChartsLabPage_LinearSettings_112" xml:space="preserve">
+    <value>Tick spacing</value>
+    <comment>ChartsLabPage: LinearSettings</comment>
+  </data>
+  <data name="ChartsLabPage_ChangeXAxis_113" xml:space="preserve">
+    <value>Could not restore the previous chart: </value>
+    <comment>ChartsLabPage: ChangeXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_ChangeXAxis_114" xml:space="preserve">
+    <value>Previous configuration restored. </value>
+    <comment>ChartsLabPage: ChangeXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_ChangeXAxis_115" xml:space="preserve">
+    <value>X axis type and shared source values changed.</value>
+    <comment>ChartsLabPage: ChangeXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_ProbeLinearXAxis_116" xml:space="preserve">
+    <value>LineSeries with double[] X/Y; the main chart is preserved.</value>
+    <comment>ChartsLabPage: ProbeLinearXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_ReconfigureXAxis_117" xml:space="preserve">
+    <value>Point {0}</value>
+    <comment>ChartsLabPage: ReconfigureXAxis</comment>
+  </data>
+  <data name="ChartsLabPage_ReplaceSeries_118" xml:space="preserve">
+    <value>Series replaced with {0}; data preserved.</value>
+    <comment>ChartsLabPage: ReplaceSeries</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPoint_119" xml:space="preserve">
+    <value>X must be a finite number; use a dot as the decimal separator.</value>
+    <comment>ChartsLabPage: ApplyPoint</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPoint_120" xml:space="preserve">
+    <value>Enter yyyy-MM-dd (UTC) or an ISO date with an explicit offset.</value>
+    <comment>ChartsLabPage: ApplyPoint</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyPoint_121" xml:space="preserve">
+    <value>Updated point {0} in series {1}.</value>
+    <comment>ChartsLabPage: ApplyPoint</comment>
+  </data>
+  <data name="ChartsLabPage_ApplyOverrides_122" xml:space="preserve">
+    <value>Point {0} overrides: {1} labels, {2} markers.</value>
+    <comment>ChartsLabPage: ApplyOverrides</comment>
+  </data>
+  <data name="ChartsLabPage_Toggle_123" xml:space="preserve">
+    <value>On</value>
+    <comment>ChartsLabPage: Toggle</comment>
+  </data>
+  <data name="ChartsLabPage_Toggle_124" xml:space="preserve">
+    <value>Off</value>
+    <comment>ChartsLabPage: Toggle</comment>
+  </data>
+  <data name="ChartsLabPage_Choice_125" xml:space="preserve">
+    <value>Custom color / default</value>
+    <comment>ChartsLabPage: Choice</comment>
+  </data>
+  <data name="ChartsLabPage_Choice_126" xml:space="preserve">
+    <value>Select a value</value>
+    <comment>ChartsLabPage: Choice</comment>
+  </data>
+  <data name="ChartsLabPage_DateSetting_127" xml:space="preserve">
+    <value>Automatic</value>
+    <comment>ChartsLabPage: DateSetting</comment>
+  </data>
+  <data name="ChartsLabPage_DateSetting_128" xml:space="preserve">
+    <value>Automatic range</value>
+    <comment>ChartsLabPage: DateSetting</comment>
+  </data>
+  <data name="ChartsLabPage_Stream_Checked_129" xml:space="preserve">
+    <value>Stream started; updates every 800 ms.</value>
+    <comment>ChartsLabPage: Stream_Checked</comment>
+  </data>
+  <data name="ChartsLabPage_Stream_Unchecked_130" xml:space="preserve">
+    <value>Stream stopped.</value>
+    <comment>ChartsLabPage: Stream_Unchecked</comment>
+  </data>
+  <data name="ChartsLabPage_RemoveSeries_Click_131" xml:space="preserve">
+    <value>Series: {0}.</value>
+    <comment>ChartsLabPage: RemoveSeries_Click</comment>
+  </data>
+  <data name="ChartsLabPage_ClearData_Click_132" xml:space="preserve">
+    <value>Source is empty. Add a point or choose a scenario.</value>
+    <comment>ChartsLabPage: ClearData_Click</comment>
+  </data>
+  <data name="TableLabPage_GetApiTargets_001" xml:space="preserve">
+    <value>Column {0}: {1}</value>
+    <comment>TableLabPage: GetApiTargets</comment>
+  </data>
+  <data name="TableLabPage_GetApiTargets_002" xml:space="preserve">
+    <value>Selected row</value>
+    <comment>TableLabPage: GetApiTargets</comment>
+  </data>
+  <data name="TableLabPage_GetApiTargets_003" xml:space="preserve">
+    <value>Group: {0}</value>
+    <comment>TableLabPage: GetApiTargets</comment>
+  </data>
+  <data name="TableLabPage_ResetLab_004" xml:space="preserve">
+    <value>Reset: 120 rows, mixed column widths, editing enabled. All data is synthetic.</value>
+    <comment>TableLabPage: ResetLab</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_005" xml:space="preserve">
+    <value>Name</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_006" xml:space="preserve">
+    <value>Category</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_007" xml:space="preserve">
+    <value>Progress · template</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_008" xml:space="preserve">
+    <value>Notes · editor</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_009" xml:space="preserve">
+    <value>Date</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_010" xml:space="preserve">
+    <value>Checkbox · immediate</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_RebuildScenario_011" xml:space="preserve">
+    <value>Expander · row height</value>
+    <comment>TableLabPage: RebuildScenario</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_012" xml:space="preserve">
+    <value>Anna Smith</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_013" xml:space="preserve">
+    <value>Michael Wilson</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_014" xml:space="preserve">
+    <value>Elena Parker</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_015" xml:space="preserve">
+    <value>David Walker</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_016" xml:space="preserve">
+    <value>Sophia Cooper</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_017" xml:space="preserve">
+    <value>Ivan Scott</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_018" xml:space="preserve">
+    <value>Alexandra Richardson — a very long name for Auto sizing</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_019" xml:space="preserve">
+    <value>Research</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_020" xml:space="preserve">
+    <value>Development</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_021" xml:space="preserve">
+    <value>Design</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_022" xml:space="preserve">
+    <value>Testing</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_023" xml:space="preserve">
+    <value>This long note tests text wrapping and variable row height. Open the editor, change the text, and try Enter, Esc, and moving focus away.</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CreateRow_024" xml:space="preserve">
+    <value>Sample record #{0}</value>
+    <comment>TableLabPage: CreateRow</comment>
+  </data>
+  <data name="TableLabPage_CategoryBucket_025" xml:space="preserve">
+    <value>(uncategorized)</value>
+    <comment>TableLabPage: CategoryBucket</comment>
+  </data>
+  <data name="TableLabPage_ApplyToolTips_026" xml:space="preserve">
+    <value>{0}: sort, Alt+←/→, and drag the column boundary</value>
+    <comment>TableLabPage: ApplyToolTips</comment>
+  </data>
+  <data name="TableLabPage_SyncColumnPicker_027" xml:space="preserve">
+    <value>&lt;untitled&gt;</value>
+    <comment>TableLabPage: SyncColumnPicker</comment>
+  </data>
+  <data name="TableLabPage_ApplySort_028" xml:space="preserve">
+    <value>Source.Sort requires ItemsSource=TableViewSource.</value>
+    <comment>TableLabPage: ApplySort</comment>
+  </data>
+  <data name="TableLabPage_ApplySort_029" xml:space="preserve">
+    <value>This column has no SortMemberPath: specify a path or comparer.</value>
+    <comment>TableLabPage: ApplySort</comment>
+  </data>
+  <data name="TableLabPage_ApplySort_030" xml:space="preserve">
+    <value>Source.Sort('{0}', {1}); the header is matched by path.</value>
+    <comment>TableLabPage: ApplySort</comment>
+  </data>
+  <data name="TableLabPage_ApplySort_031" xml:space="preserve">
+    <value>Source.Sort(key: Name.Length, {0}); an anonymous key does not create a header indicator.</value>
+    <comment>TableLabPage: ApplySort</comment>
+  </data>
+  <data name="TableLabPage_UpdateStatus_032" xml:space="preserve">
+    <value>Rows {0:N0}/{1:N0} · columns {2} · IsEditing={3}
+Selected: {4}, projection index={5} · sort glyph: {6}</value>
+    <comment>TableLabPage: UpdateStatus</comment>
+  </data>
+  <data name="TableLabPage_RunSmokeTests_033" xml:space="preserve">
+    <value>initial rows and columns</value>
+    <comment>TableLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="TableLabPage_RunSmokeTests_034" xml:space="preserve">
+    <value>CommitEdit / CancelEdit without an open editor</value>
+    <comment>TableLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="TableLabPage_RunSmokeTests_035" xml:space="preserve">
+    <value>PASS · TableView: {0} checks
+</value>
+    <comment>TableLabPage: RunSmokeTests</comment>
+  </data>
+  <data name="TableLabPage_Preset_Changed_036" xml:space="preserve">
+    <value>Scenario {0}; {1:N0} rows.</value>
+    <comment>TableLabPage: Preset_Changed</comment>
+  </data>
+  <data name="TableLabPage_Source_Changed_037" xml:space="preserve">
+    <value>ObservableCollection — sort through the internal projection</value>
+    <comment>TableLabPage: Source_Changed</comment>
+  </data>
+  <data name="TableLabPage_MultiSort_Click_038" xml:space="preserve">
+    <value>Choose TableViewSource for multi-key sorting.</value>
+    <comment>TableLabPage: MultiSort_Click</comment>
+  </data>
+  <data name="TableLabPage_AddColumn_Click_039" xml:space="preserve">
+    <value>Columns.Add: independent column with a duplicate SortMemberPath.</value>
+    <comment>TableLabPage: AddColumn_Click</comment>
+  </data>
+  <data name="TableLabPage_MutateRow_Click_040" xml:space="preserve">
+    <value>Model updated from code · </value>
+    <comment>TableLabPage: MutateRow_Click</comment>
+  </data>
+  <data name="TableLabPage_Text_041" xml:space="preserve">
+    <value>Uncategorized</value>
+    <comment>TableLabPage: Text</comment>
+  </data>
+  <data name="TableLabPage_GetErrors_042" xml:space="preserve">
+    <value>Score must be between 0 and 100.</value>
+    <comment>TableLabPage: GetErrors</comment>
+  </data>
+  <data name="TableLabPage_GenerateElementCore_043" xml:space="preserve">
+    <value>Progress: custom GenerateElementCore</value>
+    <comment>TableLabPage: GenerateElementCore</comment>
+  </data>
+  <data name="MainPage_NavigationViewItem1.Content" xml:space="preserve">
+    <value>SDK overview</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_NavigationViewItem2.Content" xml:space="preserve">
+    <value>Tables · TableView</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_NavigationViewItem3.Content" xml:space="preserve">
+    <value>Charts · Chart</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_NavigationViewItem4.Content" xml:space="preserve">
+    <value>API inspector</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_PageTitle.Text" xml:space="preserve">
+    <value>Windows App SDK lab</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_TextBlock5.Text" xml:space="preserve">
+    <value>2.5.4-experimental · native WinUI 3 controls</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_ThemePicker.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>App theme</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_ComboBoxItem6.Content" xml:space="preserve">
+    <value>System</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_ComboBoxItem7.Content" xml:space="preserve">
+    <value>Light</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainPage_ComboBoxItem8.Content" xml:space="preserve">
+    <value>Dark</value>
+    <comment>MainPage.xaml</comment>
+  </data>
+  <data name="MainWindow_Window1.Title" xml:space="preserve">
+    <value>SDK Component Lab — TableView and Chart</value>
+    <comment>MainWindow.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_TextBlock1.Text" xml:space="preserve">
+    <value>Changes apply to live lab objects. Return to the corresponding page to see the result. Choosing a scenario creates new series and axes; reopening the inspector refreshes the object list.</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_TargetPicker.Header" xml:space="preserve">
+    <value>Object</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_Search.Header" xml:space="preserve">
+    <value>Search properties</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_Inherited.Content" xml:space="preserve">
+    <value>Include inherited WinUI properties</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_Button2.Content" xml:space="preserve">
+    <value>Catalog of all types</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_SelectedTitle.Text" xml:space="preserve">
+    <value>Select a property</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_PropertyValue.Header" xml:space="preserve">
+    <value>New value</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_EnumValue.Header" xml:space="preserve">
+    <value>Enum value</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_ApplyButton.Content" xml:space="preserve">
+    <value>Apply</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_RestoreButton.Content" xml:space="preserve">
+    <value>Restore original</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_TextBlock3.Text" xml:space="preserve">
+    <value>Formats: numbers use a dot; nullable values use an empty string; bool uses True / False; Brush uses #RRGGBB, a theme resource key, or an empty string (null); GridLength uses Auto, 140, 2*; Thickness uses 8 or 4,8,4,8. Edit collections, Binding, and DataTemplate in the labs.</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ApiInspectorPage_TextBlock4.Text" xml:space="preserve">
+    <value>Object methods and events</value>
+    <comment>ApiInspectorPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_TextBlock1.Text" xml:space="preserve">
+    <value>Chart lab</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_TextBlock2.Text" xml:space="preserve">
+    <value>Native WinUI Chart: series, three axis types, and live data sources.</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_PresetPicker.Header" xml:space="preserve">
+    <value>Scenario</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton3.Label" xml:space="preserve">
+    <value>Point</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton4.Label" xml:space="preserve">
+    <value>Data</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_StreamButton.Label" xml:space="preserve">
+    <value>Stream</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton5.Label" xml:space="preserve">
+    <value>Add series</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton6.Label" xml:space="preserve">
+    <value>Remove selected series</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton7.Label" xml:space="preserve">
+    <value>Remove last point</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton8.Label" xml:space="preserve">
+    <value>Empty source</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton9.Label" xml:space="preserve">
+    <value>Reset scenario</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_AppBarButton10.Label" xml:space="preserve">
+    <value>Check API</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_Plot.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Windows App SDK experimental chart</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="ChartsLabPage_ValuesHeading.Text" xml:space="preserve">
+    <value>Selected series values — select a point to edit it in the settings pane</value>
+    <comment>ChartsLabPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_InfoBar1.Title" xml:space="preserve">
+    <value>Experimental controls</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_InfoBar1.Message" xml:space="preserve">
+    <value>Released September 29, 2026. These examples use Microsoft's native TableView and Chart from 2.5.4-experimental. The API may change in a future release.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock2.Text" xml:space="preserve">
+    <value>Explore behavior by changing settings</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock3.Text" xml:space="preserve">
+    <value>Two labs are available in the navigation menu. Settings apply to real SDK controls. Each lab includes editable data, presets, and action results; TableView also includes an event log. Switch themes without restarting; System uses Windows theme resources.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_Expander4.Header" xml:space="preserve">
+    <value>TableView · tables</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock5.Text" xml:space="preserve">
+    <value>Text and template columns; sorting, filtering, and grouping through TableViewSource; frozen columns; Pixel / Auto / Star widths; resizing and column order; density, grid lines, headers, tooltips, empty states, and cell editing.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock6.Text" xml:space="preserve">
+    <value>Try clicking a header, dragging a column boundary, selecting a row, and scrolling horizontally. Double-click or press F2 to edit, Enter to commit, and Esc to cancel. Navigate rows with arrows, Home / End / PageUp / PageDown.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock7.Text" xml:space="preserve">
+    <value>Release limitations: None or Single selection, Leading frozen columns, and one header sort key. Some enum values are reserved and do not indicate implemented features.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_Expander8.Header" xml:space="preserve">
+    <value>Chart · charts</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock9.Text" xml:space="preserve">
+    <value>LineSeries, AreaSeries, and BarSeries; horizontal and vertical bars; LinearAxis, CategoryAxis, and DateTimeAxis; multiple series and axes; legend, grid lines, labels, markers, stroke styles, and per-point overrides.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock10.Text" xml:space="preserve">
+    <value>Choose a scenario and adjust its settings. Add points, try negative values, change axis ranges and label formats. Open the API inspector to edit a specific series or axis property.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock11.Text" xml:space="preserve">
+    <value>This release provides Cartesian series. Pie charts, 3D, and built-in pan or zoom are not declared in this API.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_Expander12.Header" xml:space="preserve">
+    <value>Inspector · the public API</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock13.Text" xml:space="preserve">
+    <value>The inspector reads properties and signatures from the loaded SDK. Select a live table, column, series, axis, or Samples object. Edit and restore simple properties; use the labs for collections and templates. Copy a catalog of all public types in both namespaces, including properties, methods, and events.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock14.Text" xml:space="preserve">
+    <value>Other additions in 2.5 Experimental</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock15.Text" xml:space="preserve">
+    <value>Programmatic theme resource bindings and delegate-based DataTemplate creation; custom ink drying and InkToolbar.TargetInkPresenter; CPU / NPU selection for OCR; a new speech recognition factory; language model name/version, LoRA compatibility status, and generation-stop reasons. Fixes address resource leaks and unreachable .NET WinUI objects. See docs for the full release overview and links.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_TextBlock16.Text" xml:space="preserve">
+    <value>ThemeResource from C#</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_ThemeDemo.Text" xml:space="preserve">
+    <value>This text uses the new FrameworkElement.SetThemeResourceBinding. Try switching the app theme.</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_HyperlinkButton17.Content" xml:space="preserve">
+    <value>Microsoft Learn · release notes</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_HyperlinkButton18.Content" xml:space="preserve">
+    <value>Microsoft · TableView source and samples</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="OverviewPage_HyperlinkButton19.Content" xml:space="preserve">
+    <value>Microsoft · Chart samples</value>
+    <comment>OverviewPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBox1.PlaceholderText" xml:space="preserve">
+    <value>Edit, then press Enter</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_CheckBox2.Content" xml:space="preserve">
+    <value>In progress</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_CheckBox2.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Row status. Changes apply immediately</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock3.Text" xml:space="preserve">
+    <value>The table is empty</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock4.Text" xml:space="preserve">
+    <value>This is EmptyTemplate. Change the filter or restore the data.</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock5.Text" xml:space="preserve">
+    <value>TableView · table lab</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock6.Text" xml:space="preserve">
+    <value>Adjust settings, sort using column headers, and double-click a cell or press F2 to edit.</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_PresetCombo.Header" xml:space="preserve">
+    <value>Scenario</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem7.Content" xml:space="preserve">
+    <value>Mixed columns · 120 rows</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem8.Content" xml:space="preserve">
+    <value>All widths Auto</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem9.Content" xml:space="preserve">
+    <value>All widths Star</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem10.Content" xml:space="preserve">
+    <value>Interactive templates</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem11.Content" xml:space="preserve">
+    <value>10,000 rows · virtualization</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem12.Content" xml:space="preserve">
+    <value>Empty table</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_AppBarButton13.Label" xml:space="preserve">
+    <value>Add</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_AppBarButton14.Label" xml:space="preserve">
+    <value>Update</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_AppBarButton15.Label" xml:space="preserve">
+    <value>Remove</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_AppBarButton16.Label" xml:space="preserve">
+    <value>Reset</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_AppBarButton17.Label" xml:space="preserve">
+    <value>Check API</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock18.Text" xml:space="preserve">
+    <value>Control settings</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Expander19.Header" xml:space="preserve">
+    <value>Data, filtering, and grouping</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem20.Content" xml:space="preserve">
+    <value>TableViewSource · all transformations</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem21.Content" xml:space="preserve">
+    <value>Direct ObservableCollection</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_FilterBox.Header" xml:space="preserve">
+    <value>Search names, categories, and notes</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_HighOnlyToggle.Header" xml:space="preserve">
+    <value>Filter Score ≥ 70</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem22.Content" xml:space="preserve">
+    <value>No grouping</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem23.Content" xml:space="preserve">
+    <value>Category · string key</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem24.Content" xml:space="preserve">
+    <value>Score range · computed key</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem25.Content" xml:space="preserve">
+    <value>Object + IdentitySelector</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_GroupTemplateToggle.Header" xml:space="preserve">
+    <value>Group header template</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button26.Content" xml:space="preserve">
+    <value>Expand all</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button27.Content" xml:space="preserve">
+    <value>Collapse all</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Expander28.Header" xml:space="preserve">
+    <value>Sorting</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_SortViaCombo.Header" xml:space="preserve">
+    <value>Sort method</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button29.Content" xml:space="preserve">
+    <value>Clear</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button30.Content" xml:space="preserve">
+    <value>ToggleSortDirection · next step</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button31.Content" xml:space="preserve">
+    <value>2 keys: Category ↑, Score ↓</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_VetoSortCheck.Content" xml:space="preserve">
+    <value>Sorting.Cancel · veto sorting</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Expander32.Header" xml:space="preserve">
+    <value>Column: width, freezing, template</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ColumnCombo.Header" xml:space="preserve">
+    <value>Selected column</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_WidthValue.Header" xml:space="preserve">
+    <value>Pixels / Star weight</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ColumnReadOnlyToggle.Header" xml:space="preserve">
+    <value>Column IsReadOnly</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem33.Content" xml:space="preserve">
+    <value>By SortMemberPath</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem34.Content" xml:space="preserve">
+    <value>By Name length</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem35.Content" xml:space="preserve">
+    <value>Score, then Name</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_SortPathBox.Header" xml:space="preserve">
+    <value>SortMemberPath (empty: Binding.Path)</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem36.Content" xml:space="preserve">
+    <value>Plain header</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ComboBoxItem37.Content" xml:space="preserve">
+    <value>Icon + text</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button38.Content" xml:space="preserve">
+    <value>← Move</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button39.Content" xml:space="preserve">
+    <value>Move →</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button40.Content" xml:space="preserve">
+    <value>+ Column</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button41.Content" xml:space="preserve">
+    <value>− Column</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Expander42.Header" xml:space="preserve">
+    <value>Selection and editing</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_SelectIndexBox.Header" xml:space="preserve">
+    <value>Projection index (includes groups)</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button43.Content" xml:space="preserve">
+    <value>Deselect all</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_ReadOnlyToggle.Header" xml:space="preserve">
+    <value>Table IsReadOnly</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_VetoCommitCheck.Content" xml:space="preserve">
+    <value>CellEditEnding.Cancel on Commit</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock44.Text" xml:space="preserve">
+    <value>Score accepts 0–100: INotifyDataErrorInfo keeps invalid edits open. Notes uses a buffered CellEditingTemplate. A checkbox in the interactive template updates the model immediately.</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Expander45.Header" xml:space="preserve">
+    <value>Presentation and tooltips</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Expander46.Header" xml:space="preserve">
+    <value>Keyboard and release limitations</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock47.Text" xml:space="preserve">
+    <value>↑ ↓ PgUp PgDn — rows; ← → Home End — cells; Ctrl+Home/End — table start/end. Enter/Space on a header — sort. Alt+←/→ — resize a header (Shift for larger steps). F2/double-click — edit; Enter — commit; Esc — cancel. Enter in a template cell — focus its controls; Esc — return.</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_TextBlock48.Text" xml:space="preserve">
+    <value>This release implements Single and None selection, one grouping level, and Leading frozen columns. Trailing is reserved. There is no multi-selection, row editing, BeginEdit API, drag reordering, column auto-generation, or column virtualization. This app changes column order through Columns.</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Table.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Windows App SDK experimental table</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_EventLogSection.Header" xml:space="preserve">
+    <value>Events and checks</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="TableLabPage_Button49.Content" xml:space="preserve">
+    <value>Clear</value>
+    <comment>TableLabPage.xaml</comment>
+  </data>
+  <data name="LanguageLabel">
+    <value>Language</value>
+  </data>
+  <data name="LanguageReloadHint">
+    <value>Changing language reloads the sample labs. Theme and navigation are preserved.</value>
+  </data>
+</root>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SdkComponentLab (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SdkComponentLab (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

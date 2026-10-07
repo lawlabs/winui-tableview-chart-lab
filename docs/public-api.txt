@@ -1,0 +1,572 @@
+Windows App SDK 2.5.4-experimental — public API
+
+Microsoft.UI.Xaml.Controls.Charts.AreaSeries
+  Brush Fill { get; set;  }
+  DependencyProperty FillProperty { get;  }
+new AreaSeries()
+I As()
+Boolean Equals(AreaSeries other)
+Boolean Equals(Object obj)
+Boolean Equals(CartesianSeries other)
+AreaSeries FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.Axis
+  Boolean IsVisible { get; set;  }
+  DependencyProperty IsVisibleProperty { get;  }
+  String Label { get; set;  }
+  DependencyProperty LabelProperty { get;  }
+I As()
+Boolean Equals(Axis other)
+Boolean Equals(Object obj)
+Axis FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.BarOrientation
+Horizontal, Vertical
+
+Microsoft.UI.Xaml.Controls.Charts.BarSeries
+  Brush Fill { get; set;  }
+  DependencyProperty FillProperty { get;  }
+  BarOrientation Orientation { get; set;  }
+  DependencyProperty OrientationProperty { get;  }
+new BarSeries()
+I As()
+Boolean Equals(BarSeries other)
+Boolean Equals(Object obj)
+Boolean Equals(CartesianSeries other)
+BarSeries FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.CartesianAxis
+  Brush AxisLineBrush { get; set;  }
+  DependencyProperty AxisLineBrushProperty { get;  }
+  Brush GridLineMajorBrush { get; set;  }
+  DependencyProperty GridLineMajorBrushProperty { get;  }
+  Brush GridLineMinorBrush { get; set;  }
+  DependencyProperty GridLineMinorBrushProperty { get;  }
+  GridLines GridLines { get; set;  }
+  DependencyProperty GridLinesProperty { get;  }
+  Boolean ShowTickLabels { get; set;  }
+  DependencyProperty ShowTickLabelsProperty { get;  }
+  Boolean ShowTickMarks { get; set;  }
+  DependencyProperty ShowTickMarksProperty { get;  }
+  Brush TickBrush { get; set;  }
+  DependencyProperty TickBrushProperty { get;  }
+  Brush TickLabelBrush { get; set;  }
+  DependencyProperty TickLabelBrushProperty { get;  }
+I As()
+Boolean Equals(CartesianAxis other)
+Boolean Equals(Object obj)
+Boolean Equals(Axis other)
+CartesianAxis FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.CartesianSeries
+  Brush DataLabelBrush { get; set;  }
+  DependencyProperty DataLabelBrushProperty { get;  }
+  IObservableMap<UInt32, DataLabelOverride> DataLabelOverrides { get;  }
+  Brush DataMarkerBrush { get; set;  }
+  DependencyProperty DataMarkerBrushProperty { get;  }
+  IObservableMap<UInt32, DataMarkerOverride> DataMarkerOverrides { get;  }
+  Boolean IsVisible { get; set;  }
+  DependencyProperty IsVisibleProperty { get;  }
+  MarkerShape MarkerShape { get; set;  }
+  DependencyProperty MarkerShapeProperty { get;  }
+  Boolean ShowDataLabels { get; set;  }
+  DependencyProperty ShowDataLabelsProperty { get;  }
+  Boolean ShowDataMarkers { get; set;  }
+  DependencyProperty ShowDataMarkersProperty { get;  }
+  Brush Stroke { get; set;  }
+  StrokeDashStyle StrokeDashStyle { get; set;  }
+  DependencyProperty StrokeDashStyleProperty { get;  }
+  DependencyProperty StrokeProperty { get;  }
+  Double StrokeThickness { get; set;  }
+  DependencyProperty StrokeThicknessProperty { get;  }
+  String Title { get; set;  }
+  DependencyProperty TitleProperty { get;  }
+  CartesianAxis XAxis { get; set;  }
+  Samples XValues { get; set;  }
+  DependencyProperty XValuesProperty { get;  }
+  CartesianAxis YAxis { get; set;  }
+  Samples YValues { get; set;  }
+  DependencyProperty YValuesProperty { get;  }
+I As()
+Boolean Equals(CartesianSeries other)
+Boolean Equals(Object obj)
+CartesianSeries FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.CategoryAxis
+  CategorySortKey SortKey { get; set;  }
+  DependencyProperty SortKeyProperty { get;  }
+  SortOrder SortOrder { get; set;  }
+  DependencyProperty SortOrderProperty { get;  }
+new CategoryAxis()
+I As()
+Boolean Equals(CategoryAxis other)
+Boolean Equals(Object obj)
+Boolean Equals(CartesianAxis other)
+Boolean Equals(Axis other)
+CategoryAxis FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.CategorySortKey
+Index, Value
+
+Microsoft.UI.Xaml.Controls.Charts.Chart
+  IObservableVector<Axis> Axes { get;  }
+  IObservableVector<Samples> Data { get;  }
+  String LegendTitle { get; set;  }
+  DependencyProperty LegendTitleProperty { get;  }
+  IObservableVector<CartesianSeries> Series { get;  }
+  Boolean ShowLegend { get; set;  }
+  DependencyProperty ShowLegendProperty { get;  }
+new Chart()
+I As()
+Boolean Equals(Chart other)
+Boolean Equals(Object obj)
+Chart FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.DataLabelOverride
+  Brush Brush { get;  }
+  String Text { get;  }
+new DataLabelOverride(String text, Brush brush)
+Boolean Equals(DataLabelOverride other)
+Boolean Equals(Object obj)
+DataLabelOverride FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.DataMarkerOverride
+  Brush Brush { get;  }
+  MarkerShape Shape { get;  }
+new DataMarkerOverride(MarkerShape shape, Brush brush)
+Boolean Equals(DataMarkerOverride other)
+Boolean Equals(Object obj)
+DataMarkerOverride FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.DateTimeAxis
+  DateTimeIntervalType IntervalType { get; set;  }
+  DependencyProperty IntervalTypeProperty { get;  }
+  String LabelFormat { get; set;  }
+  DependencyProperty LabelFormatProperty { get;  }
+  DateTimeOffset? Maximum { get; set;  }
+  DateTimeOffset? Minimum { get; set;  }
+new DateTimeAxis()
+I As()
+Boolean Equals(DateTimeAxis other)
+Boolean Equals(Object obj)
+Boolean Equals(CartesianAxis other)
+Boolean Equals(Axis other)
+DateTimeAxis FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.DateTimeIntervalType
+Auto, Day, Week, Month, Year
+
+Microsoft.UI.Xaml.Controls.Charts.GridLines
+None, Major, Minor
+
+Microsoft.UI.Xaml.Controls.Charts.LinearAxis
+  Double? Maximum { get; set;  }
+  Double? Minimum { get; set;  }
+  Double? Spacing { get; set;  }
+new LinearAxis()
+Boolean Equals(LinearAxis other)
+Boolean Equals(Object obj)
+Boolean Equals(CartesianAxis other)
+Boolean Equals(Axis other)
+LinearAxis FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.LineSeries
+new LineSeries()
+Boolean Equals(LineSeries other)
+Boolean Equals(Object obj)
+Boolean Equals(CartesianSeries other)
+LineSeries FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.MarkerShape
+None, Square, Diamond, Triangle, X, Asterisk, ShortDash, LongDash, Circle, Plus
+
+Microsoft.UI.Xaml.Controls.Charts.Samples
+  Object ItemsSource { get; set;  }
+  DependencyProperty ItemsSourceProperty { get;  }
+new Samples()
+I As()
+Boolean Equals(Samples other)
+Boolean Equals(Object obj)
+Samples FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Charts.SortOrder
+Ascending, Descending
+
+Microsoft.UI.Xaml.Controls.Charts.StrokeDashStyle
+Solid, Dash, Dot, DashDot, DashDotDot
+
+Microsoft.UI.Xaml.Controls.Charts.WinUIChartingContract
+
+
+Microsoft.UI.Xaml.Controls.Charts.XamlChartsResources
+new XamlChartsResources()
+Boolean Equals(XamlChartsResources other)
+Boolean Equals(Object obj)
+XamlChartsResources FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.ITableViewSortComparer
+Int32 Compare(Object left, Object right)
+
+Microsoft.UI.Xaml.Controls.Tabular.SortDirection
+None, Ascending, Descending
+
+Microsoft.UI.Xaml.Controls.Tabular.TableView
+  Brush AlternatingRowBackground { get; set;  }
+  DependencyProperty AlternatingRowBackgroundProperty { get;  }
+  Boolean CanUserResizeColumns { get; set;  }
+  DependencyProperty CanUserResizeColumnsProperty { get;  }
+  Boolean CanUserSortColumns { get; set;  }
+  DependencyProperty CanUserSortColumnsProperty { get;  }
+  IList<TableViewColumn> Columns { get;  }
+  DependencyProperty ColumnsProperty { get;  }
+  TableViewDensity Density { get; set;  }
+  DependencyProperty DensityProperty { get;  }
+  DataTemplate EmptyTemplate { get; set;  }
+  DependencyProperty EmptyTemplateProperty { get;  }
+  TableViewGridLinesVisibility GridLinesVisibility { get; set;  }
+  DependencyProperty GridLinesVisibilityProperty { get;  }
+  DataTemplate GroupHeaderTemplate { get; set;  }
+  DependencyProperty GroupHeaderTemplateProperty { get;  }
+  TableViewHeadersVisibility HeadersVisibility { get; set;  }
+  DependencyProperty HeadersVisibilityProperty { get;  }
+  Boolean IsEditing { get;  }
+  Boolean IsReadOnly { get; set;  }
+  DependencyProperty IsReadOnlyProperty { get;  }
+  Object ItemsSource { get; set;  }
+  DependencyProperty ItemsSourceProperty { get;  }
+  Brush RowBackground { get; set;  }
+  DependencyProperty RowBackgroundProperty { get;  }
+  Int32 SelectedIndex { get;  }
+  DependencyProperty SelectedIndexProperty { get;  }
+  Object SelectedItem { get;  }
+  DependencyProperty SelectedItemProperty { get;  }
+  TableViewSelectionMode SelectionMode { get; set;  }
+  DependencyProperty SelectionModeProperty { get;  }
+new TableView()
+I As()
+Boolean CancelEdit()
+Boolean ClearSort()
+Void CollapseAllGroups()
+Boolean CommitEdit()
+Void Deselect(Int32 index)
+Void DeselectAll()
+Boolean Equals(TableView other)
+Boolean Equals(Object obj)
+Void ExpandAllGroups()
+TableView FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+Boolean IsSelected(Int32 index)
+Void Select(Int32 index)
+Boolean SortByColumn(TableViewColumn column, SortDirection direction)
+Boolean ToggleSortDirection(TableViewColumn column)
+event BeginningEdit: TypedEventHandler<TableView, TableViewBeginningEditEventArgs>
+event CellEditEnding: TypedEventHandler<TableView, TableViewCellEditEndingEventArgs>
+event SelectionChanged: TypedEventHandler<TableView, SelectionChangedEventArgs>
+event Sorted: TypedEventHandler<TableView, TableViewSortedEventArgs>
+event Sorting: TypedEventHandler<TableView, TableViewSortingEventArgs>
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewAutomationPeer
+  Boolean CanSelectMultiple { get;  }
+  Int32 ColumnCount { get;  }
+  Boolean IsSelectionRequired { get;  }
+  Int32 RowCount { get;  }
+  RowOrColumnMajor RowOrColumnMajor { get;  }
+new TableViewAutomationPeer(TableView owner)
+Boolean Equals(TableViewAutomationPeer other)
+Boolean Equals(Object obj)
+IRawElementProviderSimple FindItemByProperty(IRawElementProviderSimple startAfter, AutomationProperty automationProperty, Object value)
+TableViewAutomationPeer FromAbi(IntPtr thisPtr)
+IRawElementProviderSimple[] GetColumnHeaders()
+Int32 GetHashCode()
+IRawElementProviderSimple GetItem(Int32 row, Int32 column)
+IRawElementProviderSimple[] GetRowHeaders()
+IRawElementProviderSimple[] GetSelection()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewBeginningEditEventArgs
+  Boolean Cancel { get; set;  }
+  TableViewColumn Column { get;  }
+  Object Item { get;  }
+Boolean Equals(TableViewBeginningEditEventArgs other)
+Boolean Equals(Object obj)
+TableViewBeginningEditEventArgs FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewCellAutomationPeer
+  Int32 Column { get;  }
+  Int32 ColumnSpan { get;  }
+  IRawElementProviderSimple ContainingGrid { get;  }
+  Boolean IsReadOnly { get;  }
+  Int32 Row { get;  }
+  Int32 RowSpan { get;  }
+  String Value { get;  }
+new TableViewCellAutomationPeer(FrameworkElement cell, TableViewRow row, TableViewColumn column, Int32 columnIndex)
+Boolean Equals(TableViewCellAutomationPeer other)
+Boolean Equals(Object obj)
+TableViewCellAutomationPeer FromAbi(IntPtr thisPtr)
+IRawElementProviderSimple[] GetColumnHeaderItems()
+Int32 GetHashCode()
+IRawElementProviderSimple[] GetRowHeaderItems()
+Void SetValue(String value)
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewCellEditEndingEventArgs
+  Boolean Cancel { get; set;  }
+  TableViewColumn Column { get;  }
+  TableViewEditAction EditAction { get;  }
+  Object Item { get;  }
+Boolean Equals(TableViewCellEditEndingEventArgs other)
+Boolean Equals(Object obj)
+TableViewCellEditEndingEventArgs FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewCellsPanel
+new TableViewCellsPanel()
+Boolean Equals(TableViewCellsPanel other)
+Boolean Equals(Object obj)
+TableViewCellsPanel FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewColumn
+  Double ActualWidth { get;  }
+  DependencyProperty ActualWidthProperty { get;  }
+  Boolean CanResize { get; set;  }
+  DependencyProperty CanResizeProperty { get;  }
+  Boolean CanSort { get; set;  }
+  DependencyProperty CanSortProperty { get;  }
+  DataTemplate CellEditingTemplate { get; set;  }
+  DependencyProperty CellEditingTemplateProperty { get;  }
+  Binding CellToolTipBinding { get; set;  }
+  ITableViewSortComparer CustomSortComparer { get; set;  }
+  TableViewFrozenEdge FrozenEdge { get; set;  }
+  DependencyProperty FrozenEdgeProperty { get;  }
+  Object Header { get; set;  }
+  DependencyProperty HeaderProperty { get;  }
+  DataTemplate HeaderTemplate { get; set;  }
+  DependencyProperty HeaderTemplateProperty { get;  }
+  DataTemplateSelector HeaderTemplateSelector { get; set;  }
+  DependencyProperty HeaderTemplateSelectorProperty { get;  }
+  Object HeaderToolTip { get; set;  }
+  DependencyProperty HeaderToolTipProperty { get;  }
+  Boolean IsReadOnly { get; set;  }
+  DependencyProperty IsReadOnlyProperty { get;  }
+  Double MaxWidth { get; set;  }
+  DependencyProperty MaxWidthProperty { get;  }
+  Double MinWidth { get; set;  }
+  DependencyProperty MinWidthProperty { get;  }
+  TableViewSortCycle SortCycle { get; set;  }
+  DependencyProperty SortCycleProperty { get;  }
+  SortDirection SortDirection { get;  }
+  DependencyProperty SortDirectionProperty { get;  }
+  String SortMemberPath { get; set;  }
+  DependencyProperty SortMemberPathProperty { get;  }
+  Visibility Visibility { get; set;  }
+  DependencyProperty VisibilityProperty { get;  }
+  GridLength Width { get; set;  }
+  DependencyProperty WidthProperty { get;  }
+new TableViewColumn()
+I As()
+Boolean Equals(TableViewColumn other)
+Boolean Equals(Object obj)
+TableViewColumn FromAbi(IntPtr thisPtr)
+FrameworkElement GenerateElement(Object dataItem)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewColumnHeaderAutomationPeer
+new TableViewColumnHeaderAutomationPeer(TableView owner, TableViewColumn column)
+Boolean Equals(TableViewColumnHeaderAutomationPeer other)
+Boolean Equals(Object obj)
+TableViewColumnHeaderAutomationPeer FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+Void Invoke()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewDensity
+Compact, Standard, Comfortable
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewEditAction
+Commit, Cancel
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewFrozenEdge
+None, Leading, Trailing
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewGridLinesVisibility
+All, Horizontal, None, Vertical
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewGroupHeader
+  Boolean IsExpandable { get; set;  }
+  DependencyProperty IsExpandableProperty { get;  }
+  Boolean IsExpanded { get; set;  }
+  DependencyProperty IsExpandedProperty { get;  }
+new TableViewGroupHeader()
+I As()
+Boolean Equals(TableViewGroupHeader other)
+Boolean Equals(Object obj)
+TableViewGroupHeader FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+event ToggleRequested: TypedEventHandler<TableViewGroupHeader, TableViewGroupHeaderToggleRequestedEventArgs>
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewGroupHeaderAutomationPeer
+  Int32 Column { get;  }
+  Int32 ColumnSpan { get;  }
+  IRawElementProviderSimple ContainingGrid { get;  }
+  ExpandCollapseState ExpandCollapseState { get;  }
+  Int32 Row { get;  }
+  Int32 RowSpan { get;  }
+new TableViewGroupHeaderAutomationPeer(TableViewGroupHeader owner)
+Void Collapse()
+Boolean Equals(TableViewGroupHeaderAutomationPeer other)
+Boolean Equals(Object obj)
+Void Expand()
+TableViewGroupHeaderAutomationPeer FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewGroupHeaderToggleRequestedEventArgs
+  Object GroupKey { get;  }
+Boolean Equals(TableViewGroupHeaderToggleRequestedEventArgs other)
+Boolean Equals(Object obj)
+TableViewGroupHeaderToggleRequestedEventArgs FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewGroupInfo
+  Boolean IsExpandable { get;  }
+  Boolean IsExpanded { get;  }
+  Int32 ItemCount { get;  }
+  String ItemCountText { get;  }
+  Object Key { get;  }
+  String KeyText { get;  }
+  Int32 Level { get;  }
+Boolean Equals(TableViewGroupInfo other)
+Boolean Equals(Object obj)
+TableViewGroupInfo FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+event PropertyChanged: PropertyChangedEventHandler
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewHeadersVisibility
+None, Column
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewIdentitySelector
+new TableViewIdentitySelector(Object object, IntPtr method)
+IAsyncResult BeginInvoke(Object item, AsyncCallback callback, Object object)
+String EndInvoke(IAsyncResult result)
+String Invoke(Object item)
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewKeySelector
+new TableViewKeySelector(Object object, IntPtr method)
+IAsyncResult BeginInvoke(Object item, AsyncCallback callback, Object object)
+Object EndInvoke(IAsyncResult result)
+Object Invoke(Object item)
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewPredicate
+new TableViewPredicate(Object object, IntPtr method)
+IAsyncResult BeginInvoke(Object item, AsyncCallback callback, Object object)
+Boolean EndInvoke(IAsyncResult result)
+Boolean Invoke(Object item)
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewRow
+  Boolean IsSelected { get;  }
+  DependencyProperty IsSelectedProperty { get;  }
+new TableViewRow()
+I As()
+Boolean Equals(TableViewRow other)
+Boolean Equals(Object obj)
+TableViewRow FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewRowAutomationPeer
+  Boolean IsSelected { get;  }
+  IRawElementProviderSimple SelectionContainer { get;  }
+new TableViewRowAutomationPeer(TableViewRow owner)
+Void AddToSelection()
+Boolean Equals(TableViewRowAutomationPeer other)
+Boolean Equals(Object obj)
+TableViewRowAutomationPeer FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+Void RemoveFromSelection()
+Void Select()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewRowTemplateSelector
+new TableViewRowTemplateSelector()
+Boolean Equals(TableViewRowTemplateSelector other)
+Boolean Equals(Object obj)
+TableViewRowTemplateSelector FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewSelectionMode
+None, Single
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewSortCycle
+AscendingDescending, AscendingDescendingNone, DescendingAscending, DescendingAscendingNone
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewSortedEventArgs
+  TableViewColumn Column { get;  }
+  SortDirection Direction { get;  }
+Boolean Equals(TableViewSortedEventArgs other)
+Boolean Equals(Object obj)
+TableViewSortedEventArgs FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewSortingEventArgs
+  Boolean Cancel { get; set;  }
+  TableViewColumn Column { get;  }
+  SortDirection Direction { get;  }
+Boolean Equals(TableViewSortingEventArgs other)
+Boolean Equals(Object obj)
+TableViewSortingEventArgs FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewSource
+I As()
+TableViewSource ClearFilter()
+TableViewSource ClearGroupBy()
+TableViewSource ClearSort()
+Boolean Equals(TableViewSource other)
+Boolean Equals(Object obj)
+TableViewSource Filter(TableViewPredicate predicate)
+TableViewSource From(Object items)
+TableViewSource FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()
+TableViewSource GroupBy(TableViewKeySelector keySelector)
+TableViewSource GroupBy(TableViewKeySelector keySelector, TableViewIdentitySelector groupIdentitySelector)
+TableViewSource Sort(String sortMemberPath, SortDirection direction)
+TableViewSource Sort(TableViewKeySelector keySelector, SortDirection direction)
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewTemplateColumn
+  DataTemplate CellTemplate { get; set;  }
+  DependencyProperty CellTemplateProperty { get;  }
+new TableViewTemplateColumn()
+I As()
+Boolean Equals(TableViewTemplateColumn other)
+Boolean Equals(Object obj)
+Boolean Equals(TableViewColumn other)
+TableViewTemplateColumn FromAbi(IntPtr thisPtr)
+FrameworkElement GenerateElement(Object dataItem)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TableViewTextColumn
+  Binding Binding { get; set;  }
+new TableViewTextColumn()
+Boolean Equals(TableViewTextColumn other)
+Boolean Equals(Object obj)
+Boolean Equals(TableViewColumn other)
+TableViewTextColumn FromAbi(IntPtr thisPtr)
+FrameworkElement GenerateElement(Object dataItem)
+Int32 GetHashCode()
+
+Microsoft.UI.Xaml.Controls.Tabular.TabularControlsResources
+new TabularControlsResources()
+Boolean Equals(TabularControlsResources other)
+Boolean Equals(Object obj)
+TabularControlsResources FromAbi(IntPtr thisPtr)
+Int32 GetHashCode()

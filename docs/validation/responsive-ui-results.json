@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Small window retains a visible native table and collapsed log",
+    "status": "PASS"
+  },
+  {
+    "name": "Table settings remain reachable by scrolling",
+    "status": "PASS"
+  },
+  {
+    "name": "Small window retains Chart and its visible workspace; capture rendering",
+    "status": "PASS"
+  },
+  {
+    "name": "Chart settings remain reachable by scrolling",
+    "status": "PASS"
+  },
+  {
+    "name": "Wide layout restored and usable",
+    "status": "PASS"
+  }
+]

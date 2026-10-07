@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Navigate to TableView and restore baseline",
+    "status": "PASS",
+    "seconds": 1.08
+  },
+  {
+    "name": "Native smoke suite passes",
+    "status": "PASS",
+    "seconds": 0.41
+  },
+  {
+    "name": "Preset mixed: collection and column counts",
+    "status": "PASS",
+    "seconds": 0.98
+  },
+  {
+    "name": "Preset auto: collection and column counts",
+    "status": "PASS",
+    "seconds": 1.08
+  },
+  {
+    "name": "Preset star: collection and column counts",
+    "status": "PASS",
+    "seconds": 1.0
+  },
+  {
+    "name": "Preset interactive: collection and column counts",
+    "status": "PASS",
+    "seconds": 1.04
+  },
+  {
+    "name": "Preset 10000: collection and column counts",
+    "status": "PASS",
+    "seconds": 1.48
+  },
+  {
+    "name": "Preset empty: collection and column counts",
+    "status": "PASS",
+    "seconds": 1.13
+  },
+  {
+    "name": "Filter produces empty projection then restores all rows",
+    "status": "PASS",
+    "seconds": 0.72
+  },
+  {
+    "name": "High score filter changes displayed row count",
+    "status": "PASS",
+    "seconds": 0.93
+  },
+  {
+    "name": "Observable add and remove update projection counts",
+    "status": "PASS",
+    "seconds": 0.42
+  },
+  {
+    "name": "Grouping excludes headers from selection and expansion restores data rows",
+    "status": "PASS",
+    "seconds": 3.05
+  },
+  {
+    "name": "Computed and reference-identity grouping stages accept their keys",
+    "status": "PASS",
+    "seconds": 1.63
+  },
+  {
+    "name": "Sort buttons update the native column direction",
+    "status": "PASS",
+    "seconds": 1.12
+  },
+  {
+    "name": "Sorting.Cancel veto preserves the previous applied direction",
+    "status": "PASS",
+    "seconds": 1.3
+  },
+  {
+    "name": "Source path sort attributes a header; anonymous sort clears header indicators",
+    "status": "PASS",
+    "seconds": 2.09
+  },
+  {
+    "name": "Select, Deselect, DeselectAll and None mode update native selection",
+    "status": "PASS",
+    "seconds": 2.08
+  },
+  {
+    "name": "F2 opens a text editor; Esc preserves the original row value",
+    "status": "PASS",
+    "seconds": 2.62
+  },
+  {
+    "name": "F2 opens a text editor; Enter writes through to the selected model",
+    "status": "PASS",
+    "seconds": 2.35
+  },
+  {
+    "name": "Dynamic column add/remove updates the native Columns collection",
+    "status": "PASS",
+    "seconds": 1.08
+  },
+  {
+    "name": "Column header editing reaches the applied sort indicator",
+    "status": "PASS",
+    "seconds": 1.08
+  },
+  {
+    "name": "Column width modes, Leading frozen and reorder settings",
+    "status": "PASS",
+    "seconds": 4.01
+  },
+  {
+    "name": "Density presets and header/read-only gates are reachable",
+    "status": "PASS",
+    "seconds": 4.73
+  },
+  {
+    "name": "Raw ObservableCollection mode disables external shaping inputs",
+    "status": "PASS",
+    "seconds": 1.06
+  },
+  {
+    "name": "Restore a usable baseline after the test run",
+    "status": "PASS",
+    "seconds": 0.73
+  }
+]

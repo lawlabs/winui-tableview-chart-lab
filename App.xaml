@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="SdkComponentLab.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SdkComponentLab">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <TabularControlsResources xmlns="using:Microsoft.UI.Xaml.Controls.Tabular" />
+                <XamlChartsResources xmlns="using:Microsoft.UI.Xaml.Controls.Charts" />
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Explicit colors complement semantic theme brushes in the chart playground. -->
+            <SolidColorBrush x:Key="LabChartBlueBrush" Color="#3B82F6" />
+            <SolidColorBrush x:Key="LabChartCoralBrush" Color="#F43F5E" />
+            <SolidColorBrush x:Key="LabChartVioletBrush" Color="#8B5CF6" />
+            <SolidColorBrush x:Key="LabChartMintBrush" Color="#10B981" />
+            <SolidColorBrush x:Key="LabChartAmberBrush" Color="#F59E0B" />
+            <Style x:Key="LabSectionTitle" TargetType="TextBlock" BasedOn="{StaticResource SubtitleTextBlockStyle}">
+                <Setter Property="Margin" Value="0,16,0,8" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,18 @@
+* text=auto
+*.cs text eol=lf
+*.xaml text eol=lf
+*.resw text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.csproj text eol=lf
+*.slnx text eol=lf
+*.appxmanifest text eol=lf
+*.manifest text eol=lf
+*.txt text eol=lf
+LICENSE text eol=lf
+.git* text eol=lf
+.editorconfig text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.ico binary

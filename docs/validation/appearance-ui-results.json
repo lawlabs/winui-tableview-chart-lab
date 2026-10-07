@@ -1,0 +1,30 @@
+[
+  {
+    "status": "PASS",
+    "name": "Prepare predictable native area and inspector targets"
+  },
+  {
+    "status": "PASS",
+    "name": "Area opacity 0 reaches native Color.A"
+  },
+  {
+    "status": "PASS",
+    "name": "Area opacity 0.5 reaches native Color.A"
+  },
+  {
+    "status": "PASS",
+    "name": "Area opacity 1 reaches native Color.A"
+  },
+  {
+    "status": "PASS",
+    "name": "Bar opacity reaches native Color.A"
+  },
+  {
+    "status": "PASS",
+    "name": "Dark theme preserves half-opacity and visible axes"
+  },
+  {
+    "status": "PASS",
+    "name": "System theme and usable line preset restored"
+  }
+]

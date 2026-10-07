@@ -1,0 +1,29 @@
+name: Windows build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2025
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+      - name: Check localized strings and documentation links
+        shell: pwsh
+        run: ./tests/repository-checks.ps1
+      - name: Restore
+        run: dotnet restore SdkComponentLab.csproj -p:Platform=x64
+      - name: Build packaged WinUI 3 sample
+        run: dotnet build SdkComponentLab.csproj --no-restore -c Debug -p:Platform=x64 -r win-x64

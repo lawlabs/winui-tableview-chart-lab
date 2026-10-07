@@ -1,0 +1,36 @@
+<Page x:Class="SdkComponentLab.Pages.OverviewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer>
+        <StackPanel Spacing="16" Padding="0,16,16,24" MaxWidth="1080" HorizontalAlignment="Left">
+            <InfoBar x:Uid="OverviewPage_InfoBar1" IsOpen="True" IsClosable="False" Severity="Informational" Title="Experimental controls"
+                     Message="Released September 29, 2026. These examples use Microsoft's native TableView and Chart from 2.5.4-experimental. The API may change in a future release." />
+            <TextBlock x:Uid="OverviewPage_TextBlock2" Text="Explore behavior by changing settings" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <TextBlock x:Uid="OverviewPage_TextBlock3" Text="Two labs are available in the navigation menu. Settings apply to real SDK controls. Each lab includes editable data, presets, and action results; TableView also includes an event log. Switch themes without restarting; System uses Windows theme resources." TextWrapping="Wrap" />
+            <Expander x:Uid="OverviewPage_Expander4" Header="TableView · tables" IsExpanded="True" HorizontalAlignment="Stretch">
+                <StackPanel Spacing="8">
+                    <TextBlock x:Uid="OverviewPage_TextBlock5" Text="Text and template columns; sorting, filtering, and grouping through TableViewSource; frozen columns; Pixel / Auto / Star widths; resizing and column order; density, grid lines, headers, tooltips, empty states, and cell editing." TextWrapping="Wrap" />
+                    <TextBlock x:Uid="OverviewPage_TextBlock6" Text="Try clicking a header, dragging a column boundary, selecting a row, and scrolling horizontally. Double-click or press F2 to edit, Enter to commit, and Esc to cancel. Navigate rows with arrows, Home / End / PageUp / PageDown." TextWrapping="Wrap" />
+                    <TextBlock x:Uid="OverviewPage_TextBlock7" Text="Release limitations: None or Single selection, Leading frozen columns, and one header sort key. Some enum values are reserved and do not indicate implemented features." TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                </StackPanel>
+            </Expander>
+            <Expander x:Uid="OverviewPage_Expander8" Header="Chart · charts" IsExpanded="True" HorizontalAlignment="Stretch">
+                <StackPanel Spacing="8">
+                    <TextBlock x:Uid="OverviewPage_TextBlock9" Text="LineSeries, AreaSeries, and BarSeries; horizontal and vertical bars; LinearAxis, CategoryAxis, and DateTimeAxis; multiple series and axes; legend, grid lines, labels, markers, stroke styles, and per-point overrides." TextWrapping="Wrap" />
+                    <TextBlock x:Uid="OverviewPage_TextBlock10" Text="Choose a scenario and adjust its settings. Add points, try negative values, change axis ranges and label formats. Open the API inspector to edit a specific series or axis property." TextWrapping="Wrap" />
+                    <TextBlock x:Uid="OverviewPage_TextBlock11" Text="This release provides Cartesian series. Pie charts, 3D, and built-in pan or zoom are not declared in this API." TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                </StackPanel>
+            </Expander>
+            <Expander x:Uid="OverviewPage_Expander12" Header="Inspector · the public API" HorizontalAlignment="Stretch">
+                <TextBlock x:Uid="OverviewPage_TextBlock13" Text="The inspector reads properties and signatures from the loaded SDK. Select a live table, column, series, axis, or Samples object. Edit and restore simple properties; use the labs for collections and templates. Copy a catalog of all public types in both namespaces, including properties, methods, and events." TextWrapping="Wrap" />
+            </Expander>
+            <TextBlock x:Uid="OverviewPage_TextBlock14" Text="Other additions in 2.5 Experimental" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <TextBlock x:Uid="OverviewPage_TextBlock15" Text="Programmatic theme resource bindings and delegate-based DataTemplate creation; custom ink drying and InkToolbar.TargetInkPresenter; CPU / NPU selection for OCR; a new speech recognition factory; language model name/version, LoRA compatibility status, and generation-stop reasons. Fixes address resource leaks and unreachable .NET WinUI objects. See docs for the full release overview and links." TextWrapping="Wrap" />
+            <TextBlock x:Uid="OverviewPage_TextBlock16" Text="ThemeResource from C#" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <TextBlock x:Uid="OverviewPage_ThemeDemo" x:Name="ThemeDemo" Text="This text uses the new FrameworkElement.SetThemeResourceBinding. Try switching the app theme." TextWrapping="Wrap" />
+            <HyperlinkButton x:Uid="OverviewPage_HyperlinkButton17" Content="Microsoft Learn · release notes" NavigateUri="https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=experimental#version-25-experimental-254-experimental" AutomationProperties.AutomationId="ReleaseLink" />
+            <HyperlinkButton x:Uid="OverviewPage_HyperlinkButton18" Content="Microsoft · TableView source and samples" NavigateUri="https://github.com/microsoft/microsoft-ui-xaml/tree/winui3/release/2.5.4-experimental/controls/dev/TableView" AutomationProperties.AutomationId="TableSourceLink" />
+            <HyperlinkButton x:Uid="OverviewPage_HyperlinkButton19" Content="Microsoft · Chart samples" NavigateUri="https://github.com/microsoft/microsoft-ui-xaml/tree/winui3/release/2.5.4-experimental/Samples/ChartApp" AutomationProperties.AutomationId="ChartSourceLink" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

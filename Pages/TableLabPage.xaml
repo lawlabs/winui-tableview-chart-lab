@@ -1,0 +1,178 @@
+<Page
+    x:Class="SdkComponentLab.Pages.TableLabPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:tabular="using:Microsoft.UI.Xaml.Controls.Tabular">
+    <Page.Resources>
+        <DataTemplate x:Key="ProgressCell">
+            <StackPanel Spacing="3" Margin="8,6">
+                <TextBlock Text="{Binding Score}" FontSize="12" />
+                <ProgressBar Minimum="0" Maximum="100" Value="{Binding Score}" Height="5" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="NotesCell">
+            <TextBlock Text="{Binding Notes}" TextWrapping="Wrap" Margin="8,4" />
+        </DataTemplate>
+        <DataTemplate x:Key="NotesEditor">
+            <TextBox x:Uid="TableLabPage_TextBox1" Text="{Binding Notes, Mode=TwoWay, UpdateSourceTrigger=Explicit}" PlaceholderText="Edit, then press Enter" />
+        </DataTemplate>
+        <DataTemplate x:Key="InteractiveCell">
+            <CheckBox x:Uid="TableLabPage_CheckBox2" Content="In progress" IsChecked="{Binding IsActive, Mode=TwoWay}" Margin="6,2" AutomationProperties.Name="Row status. Changes apply immediately" />
+        </DataTemplate>
+        <DataTemplate x:Key="ExpanderCell">
+            <Expander Header="{Binding Name}" Margin="4" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                <TextBlock Text="{Binding Notes}" TextWrapping="Wrap" />
+            </Expander>
+        </DataTemplate>
+        <DataTemplate x:Key="IconHeader">
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <FontIcon Glyph="&#xE713;" FontSize="13" AutomationProperties.AccessibilityView="Raw" />
+                <TextBlock Text="{Binding}" FontWeight="SemiBold" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="EmphasisHeader">
+            <TextBlock Text="{Binding}" FontStyle="Italic" FontWeight="SemiBold" />
+        </DataTemplate>
+        <DataTemplate x:Key="GroupHeader">
+            <StackPanel Orientation="Horizontal" Spacing="12">
+                <FontIcon Glyph="&#xE8B7;" FontSize="14" AutomationProperties.AccessibilityView="Raw" />
+                <TextBlock Text="{Binding KeyText}" FontWeight="SemiBold" />
+                <TextBlock Text="{Binding ItemCountText}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="EmptyState">
+            <StackPanel Spacing="10" Padding="24" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <FontIcon Glyph="&#xE9D9;" FontSize="32" AutomationProperties.AccessibilityView="Raw" />
+                <TextBlock x:Uid="TableLabPage_TextBlock3" Text="The table is empty" Style="{ThemeResource SubtitleTextBlockStyle}" HorizontalAlignment="Center" />
+                <TextBlock x:Uid="TableLabPage_TextBlock4" Text="This is EmptyTemplate. Change the filter or restore the data." TextWrapping="Wrap" MaxWidth="320" TextAlignment="Center" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid x:Name="LayoutRoot" Padding="20" RowSpacing="12" SizeChanged="Layout_SizeChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Spacing="4">
+            <TextBlock x:Uid="TableLabPage_TextBlock5" Text="TableView · table lab" Style="{ThemeResource TitleTextBlockStyle}" AutomationProperties.HeadingLevel="Level1" />
+            <TextBlock x:Uid="TableLabPage_TextBlock6" Text="Adjust settings, sort using column headers, and double-click a cell or press F2 to edit." TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+        </StackPanel>
+        <CommandBar Grid.Row="1" DefaultLabelPosition="Right" IsOpen="False" Background="Transparent" HorizontalContentAlignment="Stretch">
+            <CommandBar.Content>
+                <ComboBox x:Uid="TableLabPage_PresetCombo" x:Name="PresetCombo" Header="Scenario" Width="260" SelectedIndex="0" SelectionChanged="Preset_Changed" AutomationProperties.AutomationId="TablePreset">
+                    <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem7" Content="Mixed columns · 120 rows" />
+                    <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem8" Content="All widths Auto" />
+                    <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem9" Content="All widths Star" />
+                    <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem10" Content="Interactive templates" />
+                    <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem11" Content="10,000 rows · virtualization" />
+                    <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem12" Content="Empty table" />
+                </ComboBox>
+            </CommandBar.Content>
+            <AppBarButton x:Uid="TableLabPage_AppBarButton13" Label="Add" Icon="Add" Click="AddRow_Click" AutomationProperties.AutomationId="TableAddRow" />
+            <AppBarButton x:Uid="TableLabPage_AppBarButton14" Label="Update" Icon="Edit" Click="MutateRow_Click" AutomationProperties.AutomationId="TableMutateRow" />
+            <AppBarButton x:Uid="TableLabPage_AppBarButton15" Label="Remove" Icon="Delete" Click="RemoveRow_Click" AutomationProperties.AutomationId="TableRemoveRow" />
+            <AppBarSeparator />
+            <AppBarButton x:Uid="TableLabPage_AppBarButton16" Label="Reset" Icon="Refresh" Click="Reset_Click" AutomationProperties.AutomationId="TableReset" />
+            <AppBarButton x:Uid="TableLabPage_AppBarButton17" Label="Check API" Icon="Accept" Click="Smoke_Click" AutomationProperties.AutomationId="TableSmoke" />
+        </CommandBar>
+        <ScrollViewer x:Name="WorkspaceScroll" Grid.Row="2" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Disabled" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled" SizeChanged="WorkspaceScroll_SizeChanged" AutomationProperties.AutomationId="TableWorkspaceScroll">
+        <Grid x:Name="Workspace" ColumnSpacing="16" RowSpacing="12">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition x:Name="InspectorColumn" Width="330" /></Grid.ColumnDefinitions>
+            <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition x:Name="InspectorRow" Height="0" /></Grid.RowDefinitions>
+            <ScrollViewer x:Name="SettingsScroll" AutomationProperties.AutomationId="TableSettingsScroll" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel Spacing="10" Padding="0,0,8,0">
+                    <TextBlock x:Uid="TableLabPage_TextBlock18" Text="Control settings" Style="{ThemeResource SubtitleTextBlockStyle}" />
+                    <Expander x:Uid="TableLabPage_Expander19" Header="Data, filtering, and grouping" IsExpanded="True" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TableDataSection">
+                        <StackPanel Spacing="9">
+                            <ComboBox x:Name="SourceCombo" Header="ItemsSource" SelectedIndex="0" SelectionChanged="Source_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableSource">
+                                <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem20" Content="TableViewSource · all transformations" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem21" Content="Direct ObservableCollection" />
+                            </ComboBox>
+                            <TextBox x:Uid="TableLabPage_FilterBox" x:Name="FilterBox" Header="Search names, categories, and notes" TextChanged="Filter_Changed" AutomationProperties.AutomationId="TableFilter" />
+                            <ToggleSwitch x:Uid="TableLabPage_HighOnlyToggle" x:Name="HighOnlyToggle" Header="Filter Score ≥ 70" Toggled="Filter_Toggled" AutomationProperties.AutomationId="TableHighOnly" />
+                            <ComboBox x:Name="GroupCombo" Header="GroupBy" SelectedIndex="0" SelectionChanged="Group_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableGroup">
+                                <ComboBoxItem x:Uid="TableLabPage_ComboBoxItem22" Content="No grouping" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem23" Content="Category · string key" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem24" Content="Score range · computed key" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem25" Content="Object + IdentitySelector" />
+                            </ComboBox>
+                            <ToggleSwitch x:Uid="TableLabPage_GroupTemplateToggle" x:Name="GroupTemplateToggle" Header="Group header template" IsOn="True" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableGroupTemplate" />
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <Button x:Uid="TableLabPage_Button26" Content="Expand all" Click="Expand_Click" AutomationProperties.AutomationId="TableExpandAll" /><Button x:Uid="TableLabPage_Button27" Content="Collapse all" Click="Collapse_Click" AutomationProperties.AutomationId="TableCollapseAll" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Expander>
+                    <Expander x:Uid="TableLabPage_Expander28" Header="Sorting" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TableSortSection">
+                        <StackPanel Spacing="9">
+                            <ToggleSwitch x:Name="UserSortToggle" Header="CanUserSortColumns" IsOn="True" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableUserSort" />
+                            <ComboBox x:Uid="TableLabPage_SortViaCombo" x:Name="SortViaCombo" Header="Sort method" SelectedIndex="0" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableSortVia">
+                                <ComboBoxItem Content="TableView.SortByColumn" /><ComboBoxItem Content="Source.Sort(path, direction)" /><ComboBoxItem Content="Source.Sort(keySelector, direction)" />
+                            </ComboBox>
+                            <StackPanel Orientation="Horizontal" Spacing="6"><Button Content="↑ ASC" Click="Ascending_Click" AutomationProperties.AutomationId="TableSortAsc" /><Button Content="↓ DESC" Click="Descending_Click" AutomationProperties.AutomationId="TableSortDesc" /><Button x:Uid="TableLabPage_Button29" Content="Clear" Click="ClearSort_Click" AutomationProperties.AutomationId="TableClearSort" /></StackPanel>
+                            <Button x:Uid="TableLabPage_Button30" Content="ToggleSortDirection · next step" Click="Cycle_Click" AutomationProperties.AutomationId="TableCycleSort" />
+                            <Button x:Uid="TableLabPage_Button31" Content="2 keys: Category ↑, Score ↓" Click="MultiSort_Click" AutomationProperties.AutomationId="TableMultiSort" />
+                            <CheckBox x:Uid="TableLabPage_VetoSortCheck" x:Name="VetoSortCheck" Content="Sorting.Cancel · veto sorting" AutomationProperties.AutomationId="TableVetoSort" />
+                        </StackPanel>
+                    </Expander>
+                    <Expander x:Uid="TableLabPage_Expander32" Header="Column: width, freezing, template" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TableColumnSection">
+                        <StackPanel Spacing="9">
+                            <ComboBox x:Uid="TableLabPage_ColumnCombo" x:Name="ColumnCombo" Header="Selected column" SelectionChanged="Column_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableColumn" />
+                            <TextBox x:Name="HeaderBox" Header="Header" TextChanged="ColumnHeader_Changed" AutomationProperties.AutomationId="TableColumnHeader" />
+                            <ComboBox x:Name="WidthCombo" Header="GridLength.Width" SelectedIndex="0" SelectionChanged="ColumnWidth_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableWidthMode"><ComboBoxItem Content="Pixel" /><ComboBoxItem Content="Auto" /><ComboBoxItem Content="Star" /></ComboBox>
+                            <NumberBox x:Uid="TableLabPage_WidthValue" x:Name="WidthValue" Header="Pixels / Star weight" Minimum="0" Value="180" ValueChanged="ColumnWidthValue_Changed" SpinButtonPlacementMode="Compact" AutomationProperties.AutomationId="TableWidthValue" />
+                            <Grid ColumnSpacing="8"><Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions><NumberBox x:Name="MinWidthBox" Header="MinWidth" Minimum="0" Value="20" ValueChanged="ColumnLimits_Changed" AutomationProperties.AutomationId="TableMinWidth" /><NumberBox x:Name="MaxWidthBox" Grid.Column="1" Header="MaxWidth" Minimum="20" Value="800" ValueChanged="ColumnLimits_Changed" AutomationProperties.AutomationId="TableMaxWidth" /></Grid>
+                            <TextBlock x:Name="ActualWidthText" FontFamily="Consolas" FontSize="12" TextWrapping="Wrap" />
+                            <ToggleSwitch x:Name="ColumnVisibleToggle" Header="Visibility = Visible" IsOn="True" Toggled="ColumnFlags_Changed" AutomationProperties.AutomationId="TableColumnVisible" />
+                            <ToggleSwitch x:Name="FrozenToggle" Header="FrozenEdge = Leading" Toggled="ColumnFlags_Changed" AutomationProperties.AutomationId="TableFrozen" />
+                            <ToggleSwitch x:Name="ColumnResizeToggle" Header="CanResize" IsOn="True" Toggled="ColumnFlags_Changed" AutomationProperties.AutomationId="TableColumnResize" />
+                            <ToggleSwitch x:Name="ColumnSortToggle" Header="CanSort" IsOn="True" Toggled="ColumnFlags_Changed" AutomationProperties.AutomationId="TableColumnSort" />
+                            <ToggleSwitch x:Uid="TableLabPage_ColumnReadOnlyToggle" x:Name="ColumnReadOnlyToggle" Header="Column IsReadOnly" Toggled="ColumnFlags_Changed" AutomationProperties.AutomationId="TableColumnReadOnly" />
+                            <ComboBox x:Name="SortCycleCombo" Header="SortCycle" SelectedIndex="0" SelectionChanged="ColumnSort_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableSortCycle"><ComboBoxItem Content="AscendingDescending" /><ComboBoxItem Content="AscendingDescendingNone" /><ComboBoxItem Content="DescendingAscending" /><ComboBoxItem Content="DescendingAscendingNone" /></ComboBox>
+                            <ComboBox x:Name="ComparerCombo" Header="CustomSortComparer" SelectedIndex="0" SelectionChanged="ColumnSort_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableComparer"><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem33" Content="By SortMemberPath" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem34" Content="By Name length" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem35" Content="Score, then Name" /></ComboBox>
+                            <TextBox x:Uid="TableLabPage_SortPathBox" x:Name="SortPathBox" Header="SortMemberPath (empty: Binding.Path)" TextChanged="ColumnPath_Changed" AutomationProperties.AutomationId="TableSortPath" />
+                            <ComboBox x:Name="HeaderTemplateCombo" Header="HeaderTemplate / Selector" SelectedIndex="0" SelectionChanged="ColumnTemplate_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableHeaderTemplate"><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem36" Content="Plain header" /><ComboBoxItem x:Uid="TableLabPage_ComboBoxItem37" Content="Icon + text" /><ComboBoxItem Content="DataTemplateSelector" /></ComboBox>
+                            <StackPanel Orientation="Horizontal" Spacing="6"><Button x:Uid="TableLabPage_Button38" Content="← Move" Click="MoveLeft_Click" AutomationProperties.AutomationId="TableColumnLeft" /><Button x:Uid="TableLabPage_Button39" Content="Move →" Click="MoveRight_Click" AutomationProperties.AutomationId="TableColumnRight" /></StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="6"><Button x:Uid="TableLabPage_Button40" Content="+ Column" Click="AddColumn_Click" AutomationProperties.AutomationId="TableAddColumn" /><Button x:Uid="TableLabPage_Button41" Content="− Column" Click="RemoveColumn_Click" AutomationProperties.AutomationId="TableRemoveColumn" /></StackPanel>
+                        </StackPanel>
+                    </Expander>
+                    <Expander x:Uid="TableLabPage_Expander42" Header="Selection and editing" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TableEditSection">
+                        <StackPanel Spacing="9">
+                            <ComboBox x:Name="SelectionCombo" Header="SelectionMode" SelectedIndex="1" SelectionChanged="SelectionMode_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableSelectionMode"><ComboBoxItem Content="None" /><ComboBoxItem Content="Single" /></ComboBox>
+                            <NumberBox x:Uid="TableLabPage_SelectIndexBox" x:Name="SelectIndexBox" Header="Projection index (includes groups)" Minimum="0" Value="0" SpinButtonPlacementMode="Compact" AutomationProperties.AutomationId="TableSelectIndex" />
+                            <StackPanel Orientation="Horizontal" Spacing="6"><Button Content="Select" Click="Select_Click" AutomationProperties.AutomationId="TableSelect" /><Button Content="Deselect" Click="Deselect_Click" AutomationProperties.AutomationId="TableDeselect" /><Button x:Uid="TableLabPage_Button43" Content="Deselect all" Click="DeselectAll_Click" AutomationProperties.AutomationId="TableDeselectAll" /></StackPanel>
+                            <ToggleSwitch x:Uid="TableLabPage_ReadOnlyToggle" x:Name="ReadOnlyToggle" Header="Table IsReadOnly" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableReadOnly" />
+                            <CheckBox x:Name="VetoBeginCheck" Content="BeginningEdit.Cancel" AutomationProperties.AutomationId="TableVetoBegin" /><CheckBox x:Uid="TableLabPage_VetoCommitCheck" x:Name="VetoCommitCheck" Content="CellEditEnding.Cancel on Commit" AutomationProperties.AutomationId="TableVetoCommit" />
+                            <StackPanel Orientation="Horizontal" Spacing="6"><Button Content="CommitEdit" Click="Commit_Click" AutomationProperties.AutomationId="TableCommit" /><Button Content="CancelEdit" Click="Cancel_Click" AutomationProperties.AutomationId="TableCancel" /></StackPanel>
+                            <TextBlock x:Uid="TableLabPage_TextBlock44" Text="Score accepts 0–100: INotifyDataErrorInfo keeps invalid edits open. Notes uses a buffered CellEditingTemplate. A checkbox in the interactive template updates the model immediately." FontSize="12" TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        </StackPanel>
+                    </Expander>
+                    <Expander x:Uid="TableLabPage_Expander45" Header="Presentation and tooltips" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TablePresentationSection">
+                        <StackPanel Spacing="9">
+                            <ComboBox x:Name="DensityCombo" Header="Density" SelectedIndex="1" SelectionChanged="PresentationCombo_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableDensity"><ComboBoxItem Content="Compact" /><ComboBoxItem Content="Standard" /><ComboBoxItem Content="Comfortable" /></ComboBox>
+                            <ComboBox x:Name="GridLinesCombo" Header="GridLinesVisibility" SelectedIndex="0" SelectionChanged="PresentationCombo_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableGridLines"><ComboBoxItem Content="All" /><ComboBoxItem Content="Horizontal" /><ComboBoxItem Content="None" /><ComboBoxItem Content="Vertical" /></ComboBox>
+                            <ToggleSwitch x:Name="HeadersToggle" Header="HeadersVisibility = Column" IsOn="True" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableHeaders" />
+                            <ToggleSwitch x:Name="UserResizeToggle" Header="CanUserResizeColumns" IsOn="True" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableUserResize" />
+                            <ToggleSwitch x:Name="BandingToggle" Header="AlternatingRowBackground" IsOn="True" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableBanding" />
+                            <ToggleSwitch x:Name="ToolTipsToggle" Header="HeaderToolTip + CellToolTipBinding" IsOn="True" Toggled="ToolTips_Changed" AutomationProperties.AutomationId="TableToolTips" />
+                            <ToggleSwitch x:Name="EmptyTemplateToggle" Header="EmptyTemplate" IsOn="True" Toggled="Presentation_Changed" AutomationProperties.AutomationId="TableEmptyTemplate" />
+                            <ComboBox x:Name="FlowCombo" Header="FlowDirection" SelectedIndex="0" SelectionChanged="PresentationCombo_Changed" HorizontalAlignment="Stretch" AutomationProperties.AutomationId="TableFlow"><ComboBoxItem Content="LeftToRight" /><ComboBoxItem Content="RightToLeft" /></ComboBox>
+                        </StackPanel>
+                    </Expander>
+                    <Expander x:Uid="TableLabPage_Expander46" Header="Keyboard and release limitations" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TableHelpSection">
+                        <StackPanel Spacing="9">
+                            <TextBlock x:Uid="TableLabPage_TextBlock47" Text="↑ ↓ PgUp PgDn — rows; ← → Home End — cells; Ctrl+Home/End — table start/end. Enter/Space on a header — sort. Alt+←/→ — resize a header (Shift for larger steps). F2/double-click — edit; Enter — commit; Esc — cancel. Enter in a template cell — focus its controls; Esc — return." TextWrapping="Wrap" />
+                            <TextBlock x:Uid="TableLabPage_TextBlock48" Text="This release implements Single and None selection, one grouping level, and Leading frozen columns. Trailing is reserved. There is no multi-selection, row editing, BeginEdit API, drag reordering, column auto-generation, or column virtualization. This app changes column order through Columns." TextWrapping="Wrap" FontSize="12" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </ScrollViewer>
+            <Grid RowSpacing="8">
+                <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                <tabular:TableView x:Uid="TableLabPage_Table" x:Name="Table" AutomationProperties.AutomationId="LabTable" AutomationProperties.Name="Windows App SDK experimental table" IsReadOnly="False" EmptyTemplate="{StaticResource EmptyState}" />
+                <TextBlock x:Name="TableStatus" Grid.Row="1" TextWrapping="Wrap" FontFamily="Consolas" FontSize="12" Foreground="{ThemeResource TextFillColorSecondaryBrush}" AutomationProperties.AutomationId="TableStatus" />
+            </Grid>
+        </Grid>
+        </ScrollViewer>
+        <Expander x:Uid="TableLabPage_EventLogSection" x:Name="EventLogSection" Grid.Row="3" Header="Events and checks" IsExpanded="True" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" AutomationProperties.AutomationId="TableLogSection">
+            <Grid ColumnSpacing="10"><Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions><TextBox x:Name="EventLog" Height="100" IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap" FontFamily="Consolas" FontSize="12" AutomationProperties.AutomationId="TableEventLog" /><Button x:Uid="TableLabPage_Button49" Grid.Column="1" Content="Clear" VerticalAlignment="Top" Click="ClearLog_Click" AutomationProperties.AutomationId="TableClearLog" /></Grid>
+        </Expander>
+    </Grid>
+</Page>

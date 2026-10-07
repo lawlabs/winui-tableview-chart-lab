@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Navigate to the native Chart and restore baseline",
+    "status": "PASS",
+    "seconds": 2.46
+  },
+  {
+    "name": "Native contract smoke suite passes all ten scenarios",
+    "status": "PASS",
+    "seconds": 0.91
+  },
+  {
+    "name": "Preset lines: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 1.88
+  },
+  {
+    "name": "Preset area: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.22
+  },
+  {
+    "name": "Preset bar: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.13
+  },
+  {
+    "name": "Preset mixed: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.07
+  },
+  {
+    "name": "Preset numeric: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.25
+  },
+  {
+    "name": "Preset dates: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.05
+  },
+  {
+    "name": "Preset two-y: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.0
+  },
+  {
+    "name": "Preset horizontal: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.0
+  },
+  {
+    "name": "Preset empty: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 1.87
+  },
+  {
+    "name": "Preset 200-points: native configuration and screenshot",
+    "status": "PASS",
+    "seconds": 2.26
+  },
+  {
+    "name": "Add and remove push new typed Samples sources",
+    "status": "PASS",
+    "seconds": 2.89
+  },
+  {
+    "name": "Randomize refreshes native series values",
+    "status": "PASS",
+    "seconds": 0.98
+  },
+  {
+    "name": "Stream starts, updates native samples and stops",
+    "status": "PASS",
+    "seconds": 2.14
+  },
+  {
+    "name": "Streaming a large source trims it to the documented thirty points",
+    "status": "PASS",
+    "seconds": 2.63
+  },
+  {
+    "name": "Legend title and visibility update the native Chart",
+    "status": "PASS",
+    "seconds": 3.35
+  },
+  {
+    "name": "Series visibility and type preserve the shared data",
+    "status": "PASS",
+    "seconds": 3.04
+  },
+  {
+    "name": "Series collections can be extended and reduced",
+    "status": "PASS",
+    "seconds": 3.01
+  },
+  {
+    "name": "Stroke, labels and markers expose every declared style family",
+    "status": "PASS",
+    "seconds": 5.76
+  },
+  {
+    "name": "Area fill selects its own brush and opacity",
+    "status": "PASS",
+    "seconds": 2.85
+  },
+  {
+    "name": "Category sorting and axis presentation settings reach native axes",
+    "status": "PASS",
+    "seconds": 4.48
+  },
+  {
+    "name": "Linear axis nullable bounds and spacing are editable",
+    "status": "PASS",
+    "seconds": 5.16
+  },
+  {
+    "name": "Changing axis kinds replaces native axes and converts X source types",
+    "status": "PASS",
+    "seconds": 3.77
+  },
+  {
+    "name": "LinearAxis on X reports the verified SDK restriction without changing the graph",
+    "status": "PASS",
+    "seconds": 1.29
+  },
+  {
+    "name": "Point editor changes a real native data point",
+    "status": "PASS",
+    "seconds": 5.2
+  },
+  {
+    "name": "Per-point label and marker overrides reach native maps and can be removed",
+    "status": "PASS",
+    "seconds": 3.33
+  },
+  {
+    "name": "Empty data can be restored with a new point",
+    "status": "PASS",
+    "seconds": 2.2
+  },
+  {
+    "name": "Return to a usable baseline",
+    "status": "PASS",
+    "seconds": 1.79
+  }
+]

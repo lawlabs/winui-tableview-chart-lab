@@ -1,0 +1,30 @@
+[
+  {
+    "status": "PASS",
+    "name": "Inspector edits live table density"
+  },
+  {
+    "status": "PASS",
+    "name": "Inspector restores original value"
+  },
+  {
+    "status": "PASS",
+    "name": "Inspector handles an empty search result"
+  },
+  {
+    "status": "PASS",
+    "name": "Public API catalog exports both namespaces"
+  },
+  {
+    "status": "PASS",
+    "name": "Dark theme reaches the chart page"
+  },
+  {
+    "status": "PASS",
+    "name": "Light theme reaches the table page"
+  },
+  {
+    "status": "PASS",
+    "name": "System theme and overview are restored"
+  }
+]

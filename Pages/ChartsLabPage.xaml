@@ -1,0 +1,72 @@
+<Page
+    x:Class="SdkComponentLab.Pages.ChartsLabPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:charts="using:Microsoft.UI.Xaml.Controls.Charts">
+    <Grid x:Name="Root" Padding="24,16,24,24" RowSpacing="12" SizeChanged="Root_SizeChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Spacing="4">
+            <TextBlock x:Uid="ChartsLabPage_TextBlock1" Text="Chart lab" Style="{ThemeResource TitleTextBlockStyle}" />
+            <TextBlock x:Uid="ChartsLabPage_TextBlock2" Text="Native WinUI Chart: series, three axis types, and live data sources." TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+        </StackPanel>
+        <CommandBar Grid.Row="1" DefaultLabelPosition="Right" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <CommandBar.Content>
+                <ComboBox x:Uid="ChartsLabPage_PresetPicker" x:Name="PresetPicker" Header="Scenario" Width="260" Margin="8,0,12,8" AutomationProperties.AutomationId="ChartPreset" SelectionChanged="PresetPicker_SelectionChanged" />
+            </CommandBar.Content>
+            <AppBarButton x:Uid="ChartsLabPage_AppBarButton3" Icon="Add" Label="Point" AutomationProperties.AutomationId="ChartAddPoint" Click="AddPoint_Click" />
+            <AppBarButton x:Uid="ChartsLabPage_AppBarButton4" Icon="Refresh" Label="Data" AutomationProperties.AutomationId="ChartRandomize" Click="Randomize_Click" />
+            <AppBarToggleButton x:Uid="ChartsLabPage_StreamButton" x:Name="StreamButton" Icon="Play" Label="Stream" AutomationProperties.AutomationId="ChartStream" Checked="Stream_Checked" Unchecked="Stream_Unchecked" />
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Uid="ChartsLabPage_AppBarButton5" Label="Add series" AutomationProperties.AutomationId="ChartAddSeries" Click="AddSeries_Click" />
+                <AppBarButton x:Uid="ChartsLabPage_AppBarButton6" Label="Remove selected series" AutomationProperties.AutomationId="ChartRemoveSeries" Click="RemoveSeries_Click" />
+                <AppBarButton x:Uid="ChartsLabPage_AppBarButton7" Label="Remove last point" AutomationProperties.AutomationId="ChartRemovePoint" Click="RemovePoint_Click" />
+                <AppBarButton x:Uid="ChartsLabPage_AppBarButton8" Label="Empty source" AutomationProperties.AutomationId="ChartClearData" Click="ClearData_Click" />
+                <AppBarButton x:Uid="ChartsLabPage_AppBarButton9" Label="Reset scenario" AutomationProperties.AutomationId="ChartReset" Click="Reset_Click" />
+                <AppBarButton x:Uid="ChartsLabPage_AppBarButton10" Label="Check API" AutomationProperties.AutomationId="ChartSmoke" Click="Smoke_Click" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+        <ScrollViewer x:Name="WorkspaceScroll" Grid.Row="2" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Disabled" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled" SizeChanged="WorkspaceScroll_SizeChanged" AutomationProperties.AutomationId="ChartWorkspaceScroll">
+        <Grid x:Name="Workspace" ColumnSpacing="20" RowSpacing="16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition x:Name="SettingsColumn" Width="350" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition x:Name="SettingsRow" Height="0" />
+            </Grid.RowDefinitions>
+            <Grid x:Name="ChartSurface" RowSpacing="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+                <charts:Chart x:Uid="ChartsLabPage_Plot" x:Name="Plot" MinHeight="220" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AutomationProperties.AutomationId="NativeChart" AutomationProperties.Name="Windows App SDK experimental chart" />
+                <TextBlock x:Uid="ChartsLabPage_ValuesHeading" x:Name="ValuesHeading" Grid.Row="1" Text="Selected series values — select a point to edit it in the settings pane" TextWrapping="Wrap" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                <ListView x:Name="ValuesList" Grid.Row="2" AutomationProperties.AutomationId="ChartValues" SelectionChanged="ValuesList_SelectionChanged" SelectionMode="Single" />
+            </Grid>
+            <ScrollViewer x:Name="SettingsScroll" Grid.Column="1" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" AutomationProperties.AutomationId="ChartSettingsScroll">
+                <StackPanel x:Name="SettingsHost" Spacing="12" Padding="0,0,12,12" />
+            </ScrollViewer>
+        </Grid>
+        </ScrollViewer>
+        <InfoBar x:Name="Status" Grid.Row="3" IsOpen="True" IsClosable="False" Severity="Informational" Title="Chart API" AutomationProperties.AutomationId="ChartStatus" />
+        <StackPanel Width="1" Height="1" Opacity="0" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Top" AutomationProperties.AccessibilityView="Raw">
+            <Border x:Name="AccentBrushProbe" Background="{ThemeResource AccentFillColorDefaultBrush}" />
+            <Border x:Name="SuccessBrushProbe" Background="{ThemeResource SystemFillColorSuccessBrush}" />
+            <Border x:Name="CautionBrushProbe" Background="{ThemeResource SystemFillColorCautionBrush}" />
+            <Border x:Name="PrimaryBrushProbe" Background="{ThemeResource TextFillColorPrimaryBrush}" />
+            <Border x:Name="SecondaryBrushProbe" Background="{ThemeResource TextFillColorSecondaryBrush}" />
+            <Border x:Name="BlueBrushProbe" Background="{ThemeResource LabChartBlueBrush}" />
+            <Border x:Name="CoralBrushProbe" Background="{ThemeResource LabChartCoralBrush}" />
+            <Border x:Name="VioletBrushProbe" Background="{ThemeResource LabChartVioletBrush}" />
+            <Border x:Name="MintBrushProbe" Background="{ThemeResource LabChartMintBrush}" />
+            <Border x:Name="AmberBrushProbe" Background="{ThemeResource LabChartAmberBrush}" />
+        </StackPanel>
+    </Grid>
+</Page>
