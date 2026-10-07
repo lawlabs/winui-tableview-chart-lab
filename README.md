@@ -8,6 +8,12 @@ An interactive **WinUI 3** sample for the new native **TableView** and **Chart**
 
 **English is the first-run default.** Switch English/Russian in the window header; the choice is remembered. Primary documentation and screenshots are English. [Russian README / Русская документация](README.ru.md).
 
+## Why this sample exists
+
+**Microsoft has just introduced its own native WinUI 3 TableView and Chart controls.** They became publicly available in **Windows App SDK 2.5.4-experimental, released on September 29, 2026**: TableView provides tabular data presentation, and Chart provides Cartesian line, area, and bar charts. These are **experimental SDK components**, rather than a stable release. See the [official Microsoft release announcement](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=experimental#version-25-experimental-254-experimental).
+
+Before this release, these Microsoft-provided TableView and Chart controls were not available as built-in public WinUI 3 components in the shipped Windows App SDK. Developers filled that gap with community libraries, separately distributed toolkit controls, commercial suites, or their own table and chart implementations. This lab makes the new SDK controls easy to explore; the [earlier WinUI 3 ecosystem](#earlier-winui-3-table-and-chart-libraries) below gives useful historical context.
+
 ## Screenshots
 
 Click any image to open the full-resolution PNG. These are real captures of the running English WinUI application with synthetic sample data.
@@ -97,6 +103,37 @@ The tested SDK rejects LinearAxis on LineSeries.XAxis with `0x80070057`. Numeric
 - [Complete Chart API research and official sources](docs/chart-research.md)
 - [Verification: 79 passing UI/API checks](docs/verification.md)
 - [Official Microsoft release notes](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-2-0?pivots=experimental#version-25-experimental-254-experimental)
+
+## Earlier WinUI 3 table and chart libraries
+
+WinUI 3 tables, data grids, and charts already existed through the wider .NET component ecosystem before Microsoft's September 2026 experimental SDK release. The following selection includes free open-source libraries, commercial products, and historical components with documented WinUI 3 support. Links point to the maintainers' repositories, documentation, and licensing information. **Reviewed October 7, 2026.**
+
+### Free and open source
+
+| Library | WinUI 3 components and capabilities | License / availability |
+| --- | --- | --- |
+| [w-ahmad / WinUI.TableView](https://github.com/w-ahmad/WinUI.TableView) | Community table control built on ListView: column generation, editing, sorting, grouping, filtering, cell selection, and copying. | Free, open source; [MIT](https://github.com/w-ahmad/WinUI.TableView/blob/main/LICENSE.md). |
+| [LiveCharts2](https://github.com/Live-Charts/LiveCharts2) | Charts, gauges, and maps, with a [WinUI integration and examples](https://livecharts.dev/docs/winui/list). | Free MIT core; optional paid performance/features and support through [Backers packages](https://livecharts.dev/home/buy). |
+| [ScottPlot](https://github.com/ScottPlot/ScottPlot) | Scientific and interactive plotting, including line, scatter, and bar plots; the [WinUI quickstart](https://scottplot.net/quickstart/winui/) uses `ScottPlot.WinUI` and `WinUIPlot`. | Free, open source; [MIT](https://github.com/ScottPlot/ScottPlot/blob/main/LICENSE). |
+
+**Two different TableView controls:** the community `WinUI.TableView` project above is independent of Microsoft's new `Microsoft.UI.Xaml.Controls.Tabular.TableView`. They have different APIs and implementations; the sample in this repository uses the Microsoft SDK component.
+
+### Commercial suites, including conditional free licensing
+
+| Suite | WinUI 3 tables and charts | License / availability |
+| --- | --- | --- |
+| [Syncfusion WinUI](https://www.syncfusion.com/winui-controls/datagrid) | DataGrid for editing, sorting, filtering, grouping, and summaries; [Cartesian charts](https://help.syncfusion.com/winui/cartesian-charts/overview) and [circular charts](https://help.syncfusion.com/winui/circular-charts/overview). | Proprietary commercial license. A free [Community License](https://www.syncfusion.com/products/communitylicense) is available to eligible individuals and organizations; eligibility and registration are required. |
+| [Telerik UI for WinUI](https://www.telerik.com/winui) | DataGrid plus [Cartesian, pie, and polar charts](https://www.telerik.com/winui/documentation/controls/radchart/getting-started). | Commercial, paid through DevCraft bundles; a time-limited evaluation trial is available. |
+| [MESCIUS ComponentOne WinUI](https://developer.mescius.com/componentone/winui-controls) | FlexGrid for tabular editing, sorting, filtering, and grouping; FlexChart for multiple chart types. | Commercial developer licensing in the WinUI & MAUI edition; an evaluation trial is available. |
+
+### Historical toolkit and vendor components
+
+| Component | What it provided | Current status |
+| --- | --- | --- |
+| [Windows Community Toolkit DataGrid 7.x](https://www.nuget.org/packages/CommunityToolkit.WinUI.UI.Controls.DataGrid/7.1.2) | A separately distributed MIT DataGrid package for WinUI 3, `CommunityToolkit.WinUI.UI.Controls.DataGrid`, with editable tabular data. | Legacy 7.x package. Microsoft's [archived DataGrid documentation](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/archive/windows/datagrid) says DataGrid is not included in the WinUI 3 controls in Toolkit 8.0 and later. It was not a built-in Windows App SDK control. |
+| [DevExpress WinUI](https://supportcenter.devexpress.com/ticket/details/t1084596/winui-data-grid-bind-to-a-collection-of-columns-specified-in-a-viewmodel) | A vendor suite with Data Grid and charts, formerly offered under a [free proprietary WinUI license](https://supportcenter.devexpress.com/ticket/details/t1173515/candlestick-charts-in-winui3). | Discontinued and no longer available to new customers; DevExpress identifies **23.2.6** as the last official release. Included here for historical context. |
+
+This catalog documents the earlier ecosystem. The interactive TableView and Chart experiments in this app exercise Microsoft's new Windows App SDK APIs. Library capabilities, licenses, and maintenance status are documented by their respective maintainers at the links above.
 
 ## Validate and contribute
 
